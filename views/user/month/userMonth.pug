@@ -1,0 +1,42 @@
+//- 레이아웃 불러오기
+extends ../userLayout.pug
+
+//- pug파일 불러오기
+block ramPug
+   include ./ramMonth.pug
+
+block cpuPug
+   include ./cpuMonth.pug
+
+block networkPug
+   include ./networkMonth.pug
+
+block diskPug
+   include ./diskMonth.pug
+
+block trafficPug
+   include ./trafficMonth.pug
+
+block eventPug
+   include ./eventMonth.pug
+
+//- 스크립트 불러오기
+block abstractClass
+   script(src="/user/js/month/A_MonthBoard.js")
+   
+block jsRam
+   script(src="/user/js/month/jsRamMonth.js")
+
+block jsCpu
+   script(src="/user/js/month/jsCpuMonth.js")
+
+block jsNetwork
+   script(src="/user/js/month/jsNetworkMonth.js")
+
+block jsDisk
+   script(src="/user/js/month/jsDiskMonth.js")
+
+block jsTraffic
+   script(src="/user/js/month/jsTrafficMonth.js")
+block jsEvent
+   script(src="/user/js/month/jsEventMonth.js")

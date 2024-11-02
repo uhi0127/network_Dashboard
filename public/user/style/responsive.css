@@ -1,0 +1,100 @@
+@font-face {
+  font-family: "SUITE-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@media screen and (max-width: 1024px) {
+  .wrapper {
+    width: 100%;
+  }
+  main .memoryGraph {
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  main .memoryGraph div {
+    position: absolute;
+    width: 100%;
+    aspect-ratio: 1/1;
+    max-width: 70%;
+    background-color: skyblue;
+  }
+  main .cpuGraph {
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  main .cpuGraph div {
+    position: absolute;
+    width: 100%;
+    aspect-ratio: 1/1;
+    max-width: 70%;
+    background-color: skyblue;
+  }
+  main .networkGraph {
+    height: 61%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  main .networkGraph div {
+    position: absolute;
+    width: 100%;
+    aspect-ratio: 1/1;
+    max-width: 70%;
+    background-color: skyblue;
+  }
+}
+@media screen and (max-width: 900px) {
+  .wrapper {
+    width: 100%;
+  }
+  main .memoryGraph {
+    height: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  main .memoryGraph div {
+    position: absolute;
+    width: 100%;
+    aspect-ratio: 1/1;
+    max-width: 70%;
+    background-color: skyblue;
+  }
+  main .cpuGraph {
+    height: 48%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  main .cpuGraph div {
+    position: absolute;
+    width: 100%;
+    aspect-ratio: 1/1;
+    max-width: 70%;
+    background-color: skyblue;
+  }
+  main .networkGraph {
+    height: 62%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  main .networkGraph div {
+    position: absolute;
+    width: 100%;
+    aspect-ratio: 1/1;
+    max-width: 70%;
+    background-color: skyblue;
+  }
+}

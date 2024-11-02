@@ -1,0 +1,612 @@
+@charset "utf-8";
+
+// Variables
+$color-background: #F3F5F8;
+$color-red: #E63C2D;
+$color-nav: #3D414F;
+$color-white: #fcfcfc; 
+$color-forder: #8EABD3;
+
+// Font 
+@font-face {
+   font-family: 'SUITE-Regular';
+   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2') format('woff2');
+   font-weight: 400;
+   font-style: normal;
+}
+
+// Mixin
+@mixin box-shape($w, $h, $r, $color) {
+   width: $w; 
+   height: $h;
+   border-radius: $r; 
+   background-color: $color; 
+	box-shadow: 10px 10px 10px gray;
+}
+
+@mixin divBox($width,$max) {
+   position: absolute;
+   width:$width; 
+   aspect-ratio: 1 / 1;
+   max-width: $max;
+   background-color: skyblue;
+}
+// @media screen and (max-width: 1100px) {
+// 	.wrapper {
+// 		width: 100%; 
+// 	}
+
+// 	main {
+// 		.memoryGraph {
+// 			width: 100%; 
+// 			height: 83%;
+// 			display: flex; 
+// 			justify-content: center; 
+// 			align-items: center; 
+// 			position: relative; 
+
+// 			div {
+// 				@include divBox(100%, 70%); 
+// 			}
+// 		}
+
+// 		.cpuGraph {
+// 			height: 65%; 
+// 			display: flex; 
+// 			justify-content: center; 
+// 			align-items: center; 
+// 			position: relative;  
+
+// 			div {
+// 				@include divBox(100%, 70%); 
+// 			}
+// 		}
+
+// 		.networkGraph {
+// 			height: 61%;     
+// 			display: flex; 
+// 			justify-content: center; 
+// 			align-items: center;
+// 			position: relative; 
+
+// 			div {
+// 				@include divBox(100%, 70%); 
+// 			} 
+// 		}
+// 	}
+// }
+
+@media screen and (max-width: 1024px) {
+	.wrapper {
+		width: 100%; 
+	}   
+
+	main {
+		.memoryGraph {
+			height: 80%;
+			display: flex; 
+			justify-content: center; 
+			align-items: center; 
+			position: relative; 
+
+			div {
+				@include divBox(100%, 70%); 
+			}
+		}
+
+		.cpuGraph {
+			height: 67%; 
+			display: flex; 
+			justify-content: center; 
+			align-items: center;  
+			position: relative; 
+
+			div {
+				@include divBox(100%, 70%); 
+			}
+		}
+
+		.networkGraph {
+			height: 61%;     
+			display: flex; 
+			justify-content: center; 
+			align-items: center;
+			position: relative; 
+
+			div {
+				@include divBox(100%, 70%); 
+			} 
+		}
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.wrapper {
+		width: 100%; 
+	}   
+
+	main {
+		.memoryGraph {
+			height: 85%;
+			display: flex; 
+			justify-content: center; 
+			align-items: center; 
+			position: relative; 
+
+			div {
+				@include divBox(100%, 70%); 
+			}
+		}
+
+		.cpuGraph {
+			height: 68%; 
+			display: flex; 
+			justify-content: center; 
+			align-items: center;  
+			position: relative; 
+
+			div {
+				@include divBox(100%, 70%); 
+			}
+		}
+
+		.networkGraph {
+			height: 62%;     
+			display: flex; 
+			justify-content: center; 
+			align-items: center;
+			position: relative; 
+
+			div {
+				@include divBox(100%, 70%); 
+			} 
+		}
+	}
+}
+
+// @media screen and (max-width: 860px) {
+// 	.wrapper {
+// 		width: 100%; 
+// 	}   
+
+// 	main {
+// 		.memoryGraph {
+// 			width: 100%; 
+// 			height: 85%;
+// 			display: flex; 
+// 			justify-content: center; 
+// 			align-items: center; 
+// 			position: relative; 
+
+// 			div {
+// 				@include divBox(100%, 70%); 
+// 			}
+// 		}
+
+// 		.cpuGraph {
+// 			height: 60%; 
+// 			display: flex; 
+// 			justify-content: center; 
+// 			align-items: center;  
+// 			position: relative; 
+
+// 			div {
+// 				@include divBox(100%, 70%); 
+// 			}
+// 		}
+
+// 		.networkGraph {
+// 			height: 65%;     
+// 			display: flex; 
+// 			justify-content: center; 
+// 			align-items: center;
+// 			position: relative; 
+
+// 			div {
+// 				@include divBox(80%); 
+// 			} 
+// 		}
+// 	} 
+// }
+
+// @media screen and (max-width: 768px) {
+// 	.wrapper {
+// 		width: 100%; 
+// 		margin: 0; 
+// 	}
+
+// 	.sidebar {
+// 		display: none; 
+// 	}
+
+// 	header {
+// 		width: 100vw;
+// 		height: 5vh; 
+// 		color: white; 
+// 		background-color: $color-nav;  
+// 	}
+
+// 	main { 
+// 		width: 100vw;
+// 		display: flex; 
+// 		justify-content: center; 
+// 		margin: 0; 
+
+// 		.memoryArea, 
+// 		.cpuArea,
+// 		.networkArea, 
+// 		.diskArea,
+// 		.trafficArea,
+// 		.eventArea {
+// 			width: 45%;
+// 			height: 38vh;  
+// 			margin: 1.67vw;
+// 			position: relative; 
+
+// 			.titleBox {
+// 				p {
+// 					font-size: 3vw;
+// 				}
+
+// 				.fa-memory, 
+// 				.fa-microchip,
+// 				.fa-hard-drive,
+// 				.fa-network-wired, 
+// 				.fa-watchman-monitoring,
+// 				.fa-record-vinyl {
+// 					font-size: 2.5vw;
+// 					padding-right: 1vw;  
+// 				}
+
+// 				.fa-bars, 
+// 				.fa-arrows-rotate {
+// 					font-size: 2vw;
+// 					position: absolute;
+// 					top: 1.6vh;
+// 					right: 6.33vw;
+// 					width: 3vw;
+// 					height: 3vw;
+// 					border-radius: 50%;
+// 					background-color: red;
+// 					text-align: center;
+// 					line-height: 3vw;
+// 				}
+
+// 				.fa-arrows-rotate {
+// 					position: absolute; 
+// 					top: 1.6vh; 
+// 					right: 1.33vw;
+// 					background-color: gold; 
+// 				}
+// 			}
+// 		}
+
+// 		.trafficArea, 
+// 		.eventArea { 
+// 			width: 90%;
+// 			height: 38vh;  
+// 			margin: 1.67vw;
+// 			position: relative;  
+// 		}
+
+// 		.memoryGraph {
+// 			width: 100%; 
+// 			height: 85%;
+// 			display: flex; 
+// 			justify-content: center; 
+// 			align-items: center; 
+// 			position: relative; 
+
+// 			div {
+// 				@include divBox(70%); 
+// 			}
+// 		}
+
+// 		.cpuGraph {
+// 			height: 60%; 
+// 			display: flex; 
+// 			justify-content: center; 
+// 			align-items: center; 
+// 			position: relative;  
+
+// 			div {
+// 				@include divBox(50%); 
+// 			}
+// 		}
+
+// 		.networkGraph {
+// 			height: 70%;     
+// 			display: flex; 
+// 			justify-content: center; 
+// 			align-items: center;
+// 			position: relative; 
+
+// 			div {
+// 				@include divBox(50%); 
+// 			} 
+// 		}
+// 	}
+
+// 	.speed {
+// 		width: 100%;
+// 	  // border: 1px solid #000;  
+
+// 		.textDown > p, 
+// 		.textUp > p {
+// 			font-size: 1vw; 
+// 		}
+
+// 		.textDown > span, 
+// 		.textUp > span {
+// 			font-size: 2vw; 
+// 		}
+// 	}
+// }
+
+// @media screen and (max-width: 640px) {
+// 	.wrapper {
+// 		width: 100%; 
+// 		margin: 0; 
+// 	}
+
+// 	.sidebar {
+// 		display: none; 
+// 	}
+
+// 	header {
+// 		width: 100vw;
+// 		height: 5vh; 
+// 		color: white; 
+// 		background-color: $color-nav;  
+// 	}
+
+// 	main { 
+// 		width: 100vw;
+// 		display: flex; 
+// 		justify-content: center; 
+// 		margin: 0; 
+
+// 		.memoryArea, 
+// 		.cpuArea,
+// 		.networkArea, 
+// 		.diskArea,
+// 		.trafficArea,
+// 		.eventArea {
+// 			width: 45%;
+// 			height: 38vh;  
+// 			margin: 1.67vw;
+// 			position: relative; 
+
+// 			.titleBox {
+// 				p {
+// 					font-size: 3vw;
+// 				}
+
+// 				.fa-memory, 
+// 				.fa-microchip,
+// 				.fa-hard-drive,
+// 				.fa-network-wired, 
+// 				.fa-watchman-monitoring,
+// 				.fa-record-vinyl {
+// 					font-size: 2.5vw;
+// 					padding-right: 1vw;  
+// 				}
+
+// 				.fa-bars, 
+// 				.fa-arrows-rotate {
+// 					font-size: 2vw;
+// 					position: absolute;
+// 					top: 1.6vh;
+// 					right: 6.33vw;
+// 					width: 3vw;
+// 					height: 3vw;
+// 					border-radius: 50%;
+// 					background-color: red;
+// 					text-align: center;
+// 					line-height: 3vw;
+// 				}
+
+// 				.fa-arrows-rotate {
+// 					position: absolute; 
+// 					top: 1.6vh; 
+// 					right: 1.33vw;
+// 					background-color: gold; 
+// 				}
+// 			}
+// 		}
+
+// 		.trafficArea, 
+// 		.eventArea { 
+// 			width: 90%;
+// 			height: 38vh;  
+// 			margin: 1.67vw;
+// 			position: relative;  
+// 		}
+
+// 		.memoryGraph {
+// 			width: 100%; 
+// 			height: 85%;
+// 			display: flex; 
+// 			justify-content: center; 
+// 			align-items: center; 
+// 			position: relative; 
+
+// 			div {
+// 				@include divBox(70%); 
+// 			}
+// 		}
+
+// 		.cpuGraph {
+// 			height: 60%; 
+// 			display: flex; 
+// 			justify-content: center; 
+// 			align-items: center; 
+// 			position: relative;  
+
+// 			div {
+// 				@include divBox(60%); 
+// 			}
+// 		}
+
+// 		.networkGraph {
+// 			height: 70%;     
+// 			display: flex; 
+// 			justify-content: center; 
+// 			align-items: center;
+// 			position: relative; 
+
+// 			div {
+// 				@include divBox(60%); 
+// 			} 
+// 		}
+// 	}
+
+// 	.speed {
+// 		width: 100%;
+// 	  // border: 1px solid #000;  
+
+// 		.textDown > p, 
+// 		.textUp > p {
+// 			font-size: 1vw; 
+// 		}
+
+// 		.textDown > span, 
+// 		.textUp > span {
+// 			font-size: 2vw; 
+// 		}
+// 	}
+// }
+
+// @media screen and (max-width: 480px) { 
+// 	.wrapper {
+// 		width: 100%; 
+// 		margin: 0; 
+// 	}
+
+// 	.sidebar {
+// 		display: none; 
+// 	}
+
+// 	header {
+// 		width: 100vw;
+// 		height: 5vh; 
+// 		color: white; 
+// 		background-color: $color-nav;  
+// 	}
+
+// 	main { 
+// 		width: 100vw;
+// 		display: flex; 
+// 		justify-content: center; 
+// 		margin: 0;  
+
+// 		.memoryArea, 
+// 		.cpuArea,
+// 		.networkArea, 
+// 		.diskArea,
+// 		.trafficArea,
+// 		.eventArea {
+// 			width: 100%;
+// 			height: 38vh;  
+// 			margin: 1.67vw;
+// 			position: relative; 
+
+// 			.titleBox {
+// 				p {
+// 					font-size: 3vw;
+// 				}
+
+// 				.fa-memory, 
+// 				.fa-microchip,
+// 				.fa-hard-drive,
+// 				.fa-network-wired, 
+// 				.fa-watchman-monitoring,
+// 				.fa-record-vinyl {
+// 					font-size: 2.5vw;
+// 					padding-right: 1vw;  
+// 				}
+
+// 				.fa-bars, 
+// 				.fa-arrows-rotate {
+// 					font-size: 2vw;
+// 					position: absolute;
+// 					top: 1.6vh;
+// 					right: 6.33vw;
+// 					width: 3vw;
+// 					height: 3vw;
+// 					border-radius: 50%;
+// 					background-color: red;
+// 					text-align: center;
+// 					line-height: 3vw;
+// 				}
+
+// 				.fa-arrows-rotate {
+// 					position: absolute; 
+// 					top: 1.6vh; 
+// 					right: 1.33vw;
+// 					background-color: gold; 
+// 				}
+// 			}
+// 		}
+
+// 		.trafficArea, 
+// 		.eventArea { 
+// 			width: 90%;
+// 			height: 38vh;  
+// 			margin: 1.67vw;
+// 			position: relative;  
+// 		}
+
+// 		.memoryGraph {
+// 			width: 100%; 
+// 			height: 85%;
+// 			display: flex; 
+// 			justify-content: center; 
+// 			align-items: center; 
+// 			position: relative; 
+
+// 			div {
+// 				@include divBox(70%); 
+// 			}
+// 		}
+
+// 		.cpuGraph {
+// 			height: 60%; 
+// 			display: flex; 
+// 			justify-content: center; 
+// 			align-items: center; 
+// 			position: relative;  
+
+// 			div {
+// 				@include divBox(60%); 
+// 			}
+// 		}
+
+// 		.networkGraph {
+// 			height: 70%;     
+// 			display: flex; 
+// 			justify-content: center; 
+// 			align-items: center;
+// 			position: relative; 
+
+// 			div {
+// 				@include divBox(60%); 
+// 			} 
+// 		}
+// 	}
+
+// 	.speed {
+// 		width: 100%;
+// 	  // border: 1px solid #000;  
+
+// 		.textDown > p, 
+// 		.textUp > p {
+// 			font-size: 1vw; 
+// 		}
+
+// 		.textDown > span, 
+// 		.textUp > span {
+// 			font-size: 2vw; 
+// 		}
+// 	}
+// }

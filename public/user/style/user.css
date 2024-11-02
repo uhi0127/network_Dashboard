@@ -1,0 +1,823 @@
+@font-face {
+  font-family: 'SUITE-Regular';
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal; }
+html, body {
+  background-color: #F3F5F8;
+  font-family: "SUITE-Regular", sans-serif;
+  width: 100%;
+  height: 100%; }
+
+.screen {
+  height: 100vh;
+  width: 100vw; }
+
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center; }
+  .wrapper .moreWindow {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1; }
+    .wrapper .moreWindow .moreSection {
+      width: 30vw;
+      height: 35vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background: #f3f5f8;
+      border-radius: 5px; }
+      .wrapper .moreWindow .moreSection .moreTitle {
+        width: 100%;
+        height: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #8EABD3;
+        border-radius: 5px 5px 0 0; }
+        .wrapper .moreWindow .moreSection .moreTitle i {
+          margin-right: 10px; }
+        .wrapper .moreWindow .moreSection .moreTitle p {
+          font-size: 2vw; }
+      .wrapper .moreWindow .moreSection .moreContent {
+        width: 50%;
+        height: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden; }
+      .wrapper .moreWindow .moreSection .moreBtn {
+        width: 20%;
+        height: 20%;
+        margin-bottom: 5%;
+        background-color: #00BEEA;
+        box-shadow: 3px 3px 2px -2px;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        transition: 0.2s; }
+      .wrapper .moreWindow .moreSection .moreBtn {
+        background: #E63C2D;
+        color: white; }
+
+#poprap #pop {
+  height: 85%; }
+#poprap .moreTitle {
+  height: 15%; }
+#poprap span {
+  font-size: 2vw; }
+
+#poprapdisk #popdisk {
+  height: 85%; }
+#poprapdisk .moreTitle {
+  height: 15%; }
+#poprapdisk span {
+  font-size: 2vw; }
+
+#popexit {
+  width: 7%;
+  aspect-ratio: 1 / 1;
+  max-width: 7%;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+#popexitdisk {
+  width: 7%;
+  aspect-ratio: 1 / 1;
+  max-width: 7%;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+header {
+  width: 100%;
+  height: 80px;
+  position: relative;
+  transition: width 0.3s ease;
+  display: flex;
+  justify-content: space-between; }
+  header h1 {
+    width: 50%;
+    font-size: 3.33vw;
+    font-weight: 900;
+    padding: 0.83vw; }
+  header ul {
+    display: none; }
+  header .cpuDate {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 20%; }
+    header .cpuDate button {
+      cursor: pointer;
+      border: none;
+      text-align: center;
+      font-size: 2vw;
+      background: none; }
+    header .cpuDate button:hover {
+      color: #8EABD3; }
+    header .cpuDate .dateInput > p {
+      font-size: 1.5vw; }
+
+.sidebar {
+  width: 7%;
+  height: 100vh;
+  background-color: #3D414F;
+  color: #fcfcfc;
+  display: flex;
+  justify-content: center; }
+  .sidebar .fa-house, .sidebar .fa-gear, .sidebar .fa-rotate {
+    color: white;
+    font-size: 2.5vw;
+    margin: 1.67vw;
+    transition: 0.2s; }
+  .sidebar ul {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center; }
+    .sidebar ul li {
+      width: 100%;
+      margin: 3.33%;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .sidebar ul li a {
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+
+main {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+  main section {
+    width: 100%;
+    height: 100%; }
+  main .ramArea, main .cpuArea, main .diskArea, main .networkArea {
+    width: 22.5%;
+    height: 50%;
+    border-radius: 10px;
+    background-color: #FFF;
+    box-shadow: 10px 10px 10px gray;
+    min-height: 350px;
+    margin: 0.83vw;
+    overflow: hidden; }
+    main .ramArea .titleBox, main .cpuArea .titleBox, main .diskArea .titleBox, main .networkArea .titleBox {
+      height: 15%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      background-color: #8EABD3;
+      font-size: 1.7vw;
+      color: #333;
+      position: relative; }
+      main .ramArea .titleBox .fa-memory, main .ramArea .titleBox .fa-microchip, main .ramArea .titleBox .fa-hard-drive, main .ramArea .titleBox .fa-network-wired, main .cpuArea .titleBox .fa-memory, main .cpuArea .titleBox .fa-microchip, main .cpuArea .titleBox .fa-hard-drive, main .cpuArea .titleBox .fa-network-wired, main .diskArea .titleBox .fa-memory, main .diskArea .titleBox .fa-microchip, main .diskArea .titleBox .fa-hard-drive, main .diskArea .titleBox .fa-network-wired, main .networkArea .titleBox .fa-memory, main .networkArea .titleBox .fa-microchip, main .networkArea .titleBox .fa-hard-drive, main .networkArea .titleBox .fa-network-wired {
+        font-size: 1.5vw;
+        padding-right: 1vw; }
+      main .ramArea .titleBox .more, main .cpuArea .titleBox .more, main .diskArea .titleBox .more, main .networkArea .titleBox .more {
+        font-size: 1vw;
+        position: absolute;
+        top: 20px;
+        right: 1.5vw;
+        cursor: pointer;
+        border: none;
+        background: none; }
+    main .ramArea .networkTab, main .cpuArea .networkTab, main .diskArea .networkTab, main .networkArea .networkTab {
+      width: 100%;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      margin-top: 15px;
+      gap: 2vw;
+      text-align: center; }
+      main .ramArea .networkTab span, main .cpuArea .networkTab span, main .diskArea .networkTab span, main .networkArea .networkTab span {
+        font-size: 1.5vw;
+        margin-bottom: 5px; }
+    main .ramArea .ramTab, main .ramArea .cpuTab, main .ramArea .diskTab, main .cpuArea .ramTab, main .cpuArea .cpuTab, main .cpuArea .diskTab, main .diskArea .ramTab, main .diskArea .cpuTab, main .diskArea .diskTab, main .networkArea .ramTab, main .networkArea .cpuTab, main .networkArea .diskTab {
+      width: 100%;
+      height: 50px;
+      margin-top: 15px; }
+      main .ramArea .ramTab ul, main .ramArea .cpuTab ul, main .ramArea .diskTab ul, main .cpuArea .ramTab ul, main .cpuArea .cpuTab ul, main .cpuArea .diskTab ul, main .diskArea .ramTab ul, main .diskArea .cpuTab ul, main .diskArea .diskTab ul, main .networkArea .ramTab ul, main .networkArea .cpuTab ul, main .networkArea .diskTab ul {
+        display: flex;
+        justify-content: space-around; }
+        main .ramArea .ramTab ul li, main .ramArea .cpuTab ul li, main .ramArea .diskTab ul li, main .cpuArea .ramTab ul li, main .cpuArea .cpuTab ul li, main .cpuArea .diskTab ul li, main .diskArea .ramTab ul li, main .diskArea .cpuTab ul li, main .diskArea .diskTab ul li, main .networkArea .ramTab ul li, main .networkArea .cpuTab ul li, main .networkArea .diskTab ul li {
+          margin-bottom: 5px; }
+    main .ramArea .networkGraph, main .ramArea .ramGraph, main .ramArea .diskGraph, main .cpuArea .networkGraph, main .cpuArea .ramGraph, main .cpuArea .diskGraph, main .diskArea .networkGraph, main .diskArea .ramGraph, main .diskArea .diskGraph, main .networkArea .networkGraph, main .networkArea .ramGraph, main .networkArea .diskGraph {
+      width: 100%;
+      height: 85%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      overflow: hidden; }
+      main .ramArea .networkGraph div, main .ramArea .ramGraph div, main .ramArea .diskGraph div, main .cpuArea .networkGraph div, main .cpuArea .ramGraph div, main .cpuArea .diskGraph div, main .diskArea .networkGraph div, main .diskArea .ramGraph div, main .diskArea .diskGraph div, main .networkArea .networkGraph div, main .networkArea .ramGraph div, main .networkArea .diskGraph div {
+        width: 75%;
+        aspect-ratio: 1 / 1;
+        max-width: 75%;
+        overflow: hidden; }
+    main .ramArea .cpuGraph, main .cpuArea .cpuGraph, main .diskArea .cpuGraph, main .networkArea .cpuGraph {
+      width: 100%;
+      height: 85%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      overflow: hidden; }
+      main .ramArea .cpuGraph div, main .cpuArea .cpuGraph div, main .diskArea .cpuGraph div, main .networkArea .cpuGraph div {
+        width: 70%;
+        aspect-ratio: 1 / 1;
+        max-width: 70%;
+        overflow: hidden; }
+  main .trafficArea {
+    width: 71.2%;
+    height: 50%;
+    border-radius: 10px;
+    background-color: #FFF;
+    box-shadow: 10px 10px 10px gray;
+    min-height: 350px;
+    margin: 0.83vw; }
+    main .trafficArea .titleBox {
+      height: 15%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      background-color: #8EABD3;
+      font-size: 1.7vw;
+      color: #333;
+      position: relative; }
+      main .trafficArea .titleBox .fa-watchman-monitoring {
+        font-size: 1.5vw;
+        padding: 1vw; }
+    main .trafficArea .trafficGraph {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 85%; }
+      main .trafficArea .trafficGraph .trafficNow {
+        width: 90%;
+        height: 80%; }
+      main .trafficArea .trafficGraph .trafficWeek {
+        width: 90%;
+        height: 80%; }
+      main .trafficArea .trafficGraph .trafficMonth {
+        width: 90%;
+        height: 80%; }
+  main .eventArea {
+    width: 22.5%;
+    height: 50%;
+    border-radius: 10px;
+    background-color: #FFF;
+    box-shadow: 10px 10px 10px gray;
+    min-height: 350px;
+    margin: 0.83vw; }
+    main .eventArea .titleBox {
+      height: 15%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      background-color: #8EABD3;
+      font-size: 1.7vw;
+      color: #333;
+      position: relative; }
+      main .eventArea .titleBox .fa-record-vinyl {
+        font-size: 1.5vw;
+        padding-right: 1vw; }
+    main .eventArea .eventOnOff {
+      display: flex;
+      justify-content: center; }
+      main .eventArea .eventOnOff .textBox {
+        margin-top: 2%;
+        width: 90%;
+        height: 30vh;
+        overflow: hidden; }
+
+@media screen and (max-width: 768px) {
+  * {
+    font-size: 1.5vw; }
+
+  body .wrapper {
+    width: 100%;
+    margin: 0; }
+    body .wrapper .sideMenu {
+      display: none; }
+    body .wrapper i {
+      font-size: 3vw;
+      display: flex; }
+    body .wrapper header {
+      margin: 0;
+      width: 100%;
+      height: 40px;
+      margin-top: 0.83vw;
+      background-color: #3D414F;
+      position: relative;
+      color: #fcfcfc;
+      font-size: 1.67vw;
+      padding: 1.67vw;
+      position: relative;
+      justify-content: space-around;
+      align-items: center;
+      display: flex; }
+      body .wrapper header h1 {
+        width: 35%;
+        font-size: 3.33vw;
+        font-weight: 900;
+        padding: 0.83vw;
+        font-size: 3vw; }
+      body .wrapper header .cpuDate i {
+        color: #fff; }
+      body .wrapper header .cpuDate .dateInput p {
+        font-size: 2vw; }
+      body .wrapper header ul {
+        width: 35%;
+        display: flex;
+        justify-content: center;
+        margin-right: 1%;
+        top: 20px;
+        right: 0px; }
+        body .wrapper header ul li {
+          width: 25%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: white; }
+          body .wrapper header ul li i {
+            color: white;
+            font-size: 3vw; }
+          body .wrapper header ul li img {
+            width: 3vw; }
+  body main {
+    display: flex;
+    justify-content: center; }
+  body .ramArea,
+  body .cpuArea,
+  body .networkArea,
+  body .diskArea {
+    width: 46vw; }
+    body .ramArea .titleBox,
+    body .cpuArea .titleBox,
+    body .networkArea .titleBox,
+    body .diskArea .titleBox {
+      font-size: 3vw; }
+      body .ramArea .titleBox .fa-memory,
+      body .ramArea .titleBox .fa-microchip,
+      body .ramArea .titleBox .fa-hard-drive,
+      body .ramArea .titleBox .fa-network-wired,
+      body .cpuArea .titleBox .fa-memory,
+      body .cpuArea .titleBox .fa-microchip,
+      body .cpuArea .titleBox .fa-hard-drive,
+      body .cpuArea .titleBox .fa-network-wired,
+      body .networkArea .titleBox .fa-memory,
+      body .networkArea .titleBox .fa-microchip,
+      body .networkArea .titleBox .fa-hard-drive,
+      body .networkArea .titleBox .fa-network-wired,
+      body .diskArea .titleBox .fa-memory,
+      body .diskArea .titleBox .fa-microchip,
+      body .diskArea .titleBox .fa-hard-drive,
+      body .diskArea .titleBox .fa-network-wired {
+        font-size: 3vw;
+        padding-right: 1vw; }
+      body .ramArea .titleBox .more,
+      body .cpuArea .titleBox .more,
+      body .networkArea .titleBox .more,
+      body .diskArea .titleBox .more {
+        font-size: 2vw;
+        position: absolute;
+        top: 20px;
+        right: 3.5vw;
+        cursor: pointer; }
+    body .ramArea .networkTab,
+    body .cpuArea .networkTab,
+    body .networkArea .networkTab,
+    body .diskArea .networkTab {
+      display: flex;
+      align-items: center; }
+      body .ramArea .networkTab span,
+      body .cpuArea .networkTab span,
+      body .networkArea .networkTab span,
+      body .diskArea .networkTab span {
+        font-size: 3vw; }
+      body .ramArea .networkTab .ramTab,
+      body .ramArea .networkTab .cpuTab,
+      body .ramArea .networkTab .diskTab,
+      body .cpuArea .networkTab .ramTab,
+      body .cpuArea .networkTab .cpuTab,
+      body .cpuArea .networkTab .diskTab,
+      body .networkArea .networkTab .ramTab,
+      body .networkArea .networkTab .cpuTab,
+      body .networkArea .networkTab .diskTab,
+      body .diskArea .networkTab .ramTab,
+      body .diskArea .networkTab .cpuTab,
+      body .diskArea .networkTab .diskTab {
+        width: 100%;
+        height: 50px; }
+        body .ramArea .networkTab .ramTab ul,
+        body .ramArea .networkTab .cpuTab ul,
+        body .ramArea .networkTab .diskTab ul,
+        body .cpuArea .networkTab .ramTab ul,
+        body .cpuArea .networkTab .cpuTab ul,
+        body .cpuArea .networkTab .diskTab ul,
+        body .networkArea .networkTab .ramTab ul,
+        body .networkArea .networkTab .cpuTab ul,
+        body .networkArea .networkTab .diskTab ul,
+        body .diskArea .networkTab .ramTab ul,
+        body .diskArea .networkTab .cpuTab ul,
+        body .diskArea .networkTab .diskTab ul {
+          display: flex;
+          justify-content: space-around;
+          margin: 10px 0 10px 0; }
+          body .ramArea .networkTab .ramTab ul li,
+          body .ramArea .networkTab .cpuTab ul li,
+          body .ramArea .networkTab .diskTab ul li,
+          body .cpuArea .networkTab .ramTab ul li,
+          body .cpuArea .networkTab .cpuTab ul li,
+          body .cpuArea .networkTab .diskTab ul li,
+          body .networkArea .networkTab .ramTab ul li,
+          body .networkArea .networkTab .cpuTab ul li,
+          body .networkArea .networkTab .diskTab ul li,
+          body .diskArea .networkTab .ramTab ul li,
+          body .diskArea .networkTab .cpuTab ul li,
+          body .diskArea .networkTab .diskTab ul li {
+            margin-bottom: 5px; }
+    body .ramArea .ramGraph,
+    body .ramArea .diskGraph,
+    body .cpuArea .ramGraph,
+    body .cpuArea .diskGraph,
+    body .networkArea .ramGraph,
+    body .networkArea .diskGraph,
+    body .diskArea .ramGraph,
+    body .diskArea .diskGraph {
+      width: 100%;
+      height: 85%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden; }
+      body .ramArea .ramGraph div,
+      body .ramArea .diskGraph div,
+      body .cpuArea .ramGraph div,
+      body .cpuArea .diskGraph div,
+      body .networkArea .ramGraph div,
+      body .networkArea .diskGraph div,
+      body .diskArea .ramGraph div,
+      body .diskArea .diskGraph div {
+        width: 90%;
+        aspect-ratio: 1 / 1;
+        max-width: 80%; }
+    body .ramArea .networkGraph,
+    body .cpuArea .networkGraph,
+    body .networkArea .networkGraph,
+    body .diskArea .networkGraph {
+      width: 100%;
+      height: 85%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden; }
+      body .ramArea .networkGraph div,
+      body .cpuArea .networkGraph div,
+      body .networkArea .networkGraph div,
+      body .diskArea .networkGraph div {
+        width: 90%;
+        aspect-ratio: 1 / 1;
+        max-width: 80%; }
+  body .cpuGraph {
+    width: 100%;
+    height: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; }
+    body .cpuGraph div {
+      width: 90%;
+      aspect-ratio: 1 / 1;
+      max-width: 80%; }
+  body .trafficArea {
+    width: 60vw; }
+    body .trafficArea .titleBox {
+      font-size: 3vw; }
+      body .trafficArea .titleBox .fa-memory,
+      body .trafficArea .titleBox .fa-microchip,
+      body .trafficArea .titleBox .fa-hard-drive,
+      body .trafficArea .titleBox .fa-network-wired {
+        font-size: 3vw;
+        padding-right: 1vw; }
+  body .eventArea {
+    width: 33vw; }
+
+  #poprap span {
+    font-size: 3vw; }
+
+  #poprapdisk span {
+    font-size: 3vw; } }
+@media screen and (max-width: 480px) {
+  * {
+    font-size: 2.5vw; }
+
+  body .wrapper {
+    width: 100%;
+    margin: 0; }
+    body .wrapper .sideMenu {
+      display: none; }
+    body .wrapper i {
+      font-size: 3vw;
+      display: flex; }
+    body .wrapper header {
+      margin: 0;
+      width: 100%;
+      height: 40px;
+      line-height: 4.5vh;
+      margin-top: 0.83vw;
+      background-color: #3D414F;
+      position: relative;
+      color: #fcfcfc;
+      font-size: 1.67vw;
+      padding: 1.67vw;
+      position: relative; }
+      body .wrapper header ul {
+        width: 40%;
+        display: flex;
+        justify-content: space-between;
+        margin-right: 1%;
+        top: 20px;
+        right: 0px; }
+        body .wrapper header ul li {
+          width: 15%;
+          display: flex;
+          justify-content: cente;
+          align-items: center;
+          color: white; }
+          body .wrapper header ul li a {
+            display: flex;
+            align-items: center; }
+            body .wrapper header ul li a img {
+              width: 4vw; }
+          body .wrapper header ul li i {
+            color: white;
+            font-size: 4vw; }
+  body main {
+    display: flex;
+    justify-content: center; }
+  body .ramArea,
+  body .cpuArea,
+  body .networkArea,
+  body .diskArea,
+  body .trafficArea,
+  body .eventArea {
+    margin-bottom: 1.67vw;
+    width: 90vw;
+    position: relative; }
+    body .ramArea .titleBox,
+    body .cpuArea .titleBox,
+    body .networkArea .titleBox,
+    body .diskArea .titleBox,
+    body .trafficArea .titleBox,
+    body .eventArea .titleBox {
+      font-size: 5vw;
+      height: 12%; }
+      body .ramArea .titleBox .fa-memory,
+      body .ramArea .titleBox .fa-microchip,
+      body .ramArea .titleBox .fa-hard-drive,
+      body .ramArea .titleBox .fa-network-wired,
+      body .cpuArea .titleBox .fa-memory,
+      body .cpuArea .titleBox .fa-microchip,
+      body .cpuArea .titleBox .fa-hard-drive,
+      body .cpuArea .titleBox .fa-network-wired,
+      body .networkArea .titleBox .fa-memory,
+      body .networkArea .titleBox .fa-microchip,
+      body .networkArea .titleBox .fa-hard-drive,
+      body .networkArea .titleBox .fa-network-wired,
+      body .diskArea .titleBox .fa-memory,
+      body .diskArea .titleBox .fa-microchip,
+      body .diskArea .titleBox .fa-hard-drive,
+      body .diskArea .titleBox .fa-network-wired,
+      body .trafficArea .titleBox .fa-memory,
+      body .trafficArea .titleBox .fa-microchip,
+      body .trafficArea .titleBox .fa-hard-drive,
+      body .trafficArea .titleBox .fa-network-wired,
+      body .eventArea .titleBox .fa-memory,
+      body .eventArea .titleBox .fa-microchip,
+      body .eventArea .titleBox .fa-hard-drive,
+      body .eventArea .titleBox .fa-network-wired {
+        font-size: 5vw;
+        padding-right: 1vw; }
+      body .ramArea .titleBox .more,
+      body .cpuArea .titleBox .more,
+      body .networkArea .titleBox .more,
+      body .diskArea .titleBox .more,
+      body .trafficArea .titleBox .more,
+      body .eventArea .titleBox .more {
+        font-size: 3vw;
+        position: absolute;
+        top: 3vw;
+        right: 3.5vw;
+        cursor: pointer; }
+    body .ramArea .networkTab,
+    body .cpuArea .networkTab,
+    body .networkArea .networkTab,
+    body .diskArea .networkTab,
+    body .trafficArea .networkTab,
+    body .eventArea .networkTab {
+      width: 20%;
+      height: 40%;
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 21vw;
+      right: 2vw;
+      text-align: center; }
+      body .ramArea .networkTab .textDown > span,
+      body .ramArea .networkTab .textUp > span,
+      body .cpuArea .networkTab .textDown > span,
+      body .cpuArea .networkTab .textUp > span,
+      body .networkArea .networkTab .textDown > span,
+      body .networkArea .networkTab .textUp > span,
+      body .diskArea .networkTab .textDown > span,
+      body .diskArea .networkTab .textUp > span,
+      body .trafficArea .networkTab .textDown > span,
+      body .trafficArea .networkTab .textUp > span,
+      body .eventArea .networkTab .textDown > span,
+      body .eventArea .networkTab .textUp > span {
+        font-size: 4vw; }
+    body .ramArea .ramTab,
+    body .ramArea .cpuTab,
+    body .ramArea .diskTab,
+    body .cpuArea .ramTab,
+    body .cpuArea .cpuTab,
+    body .cpuArea .diskTab,
+    body .networkArea .ramTab,
+    body .networkArea .cpuTab,
+    body .networkArea .diskTab,
+    body .diskArea .ramTab,
+    body .diskArea .cpuTab,
+    body .diskArea .diskTab,
+    body .trafficArea .ramTab,
+    body .trafficArea .cpuTab,
+    body .trafficArea .diskTab,
+    body .eventArea .ramTab,
+    body .eventArea .cpuTab,
+    body .eventArea .diskTab {
+      width: 100%;
+      height: 0;
+      position: relative; }
+      body .ramArea .ramTab ul,
+      body .ramArea .cpuTab ul,
+      body .ramArea .diskTab ul,
+      body .cpuArea .ramTab ul,
+      body .cpuArea .cpuTab ul,
+      body .cpuArea .diskTab ul,
+      body .networkArea .ramTab ul,
+      body .networkArea .cpuTab ul,
+      body .networkArea .diskTab ul,
+      body .diskArea .ramTab ul,
+      body .diskArea .cpuTab ul,
+      body .diskArea .diskTab ul,
+      body .trafficArea .ramTab ul,
+      body .trafficArea .cpuTab ul,
+      body .trafficArea .diskTab ul,
+      body .eventArea .ramTab ul,
+      body .eventArea .cpuTab ul,
+      body .eventArea .diskTab ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 13vh;
+        right: 4vw; }
+        body .ramArea .ramTab ul li,
+        body .ramArea .cpuTab ul li,
+        body .ramArea .diskTab ul li,
+        body .cpuArea .ramTab ul li,
+        body .cpuArea .cpuTab ul li,
+        body .cpuArea .diskTab ul li,
+        body .networkArea .ramTab ul li,
+        body .networkArea .cpuTab ul li,
+        body .networkArea .diskTab ul li,
+        body .diskArea .ramTab ul li,
+        body .diskArea .cpuTab ul li,
+        body .diskArea .diskTab ul li,
+        body .trafficArea .ramTab ul li,
+        body .trafficArea .cpuTab ul li,
+        body .trafficArea .diskTab ul li,
+        body .eventArea .ramTab ul li,
+        body .eventArea .cpuTab ul li,
+        body .eventArea .diskTab ul li {
+          margin-bottom: 15px; }
+    body .ramArea .ramGraph,
+    body .ramArea .diskGraph,
+    body .ramArea .networkGraph,
+    body .cpuArea .ramGraph,
+    body .cpuArea .diskGraph,
+    body .cpuArea .networkGraph,
+    body .networkArea .ramGraph,
+    body .networkArea .diskGraph,
+    body .networkArea .networkGraph,
+    body .diskArea .ramGraph,
+    body .diskArea .diskGraph,
+    body .diskArea .networkGraph,
+    body .trafficArea .ramGraph,
+    body .trafficArea .diskGraph,
+    body .trafficArea .networkGraph,
+    body .eventArea .ramGraph,
+    body .eventArea .diskGraph,
+    body .eventArea .networkGraph {
+      height: 80%;
+      margin-right: 1vw; }
+      body .ramArea .ramGraph div,
+      body .ramArea .diskGraph div,
+      body .ramArea .networkGraph div,
+      body .cpuArea .ramGraph div,
+      body .cpuArea .diskGraph div,
+      body .cpuArea .networkGraph div,
+      body .networkArea .ramGraph div,
+      body .networkArea .diskGraph div,
+      body .networkArea .networkGraph div,
+      body .diskArea .ramGraph div,
+      body .diskArea .diskGraph div,
+      body .diskArea .networkGraph div,
+      body .trafficArea .ramGraph div,
+      body .trafficArea .diskGraph div,
+      body .trafficArea .networkGraph div,
+      body .eventArea .ramGraph div,
+      body .eventArea .diskGraph div,
+      body .eventArea .networkGraph div {
+        width: 70%;
+        aspect-ratio: 1 / 1;
+        max-width: 65%;
+        margin-bottom: -4vw; }
+    body .ramArea .cpuGraph,
+    body .cpuArea .cpuGraph,
+    body .networkArea .cpuGraph,
+    body .diskArea .cpuGraph,
+    body .trafficArea .cpuGraph,
+    body .eventArea .cpuGraph {
+      height: 88%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 1vw; }
+      body .ramArea .cpuGraph div,
+      body .cpuArea .cpuGraph div,
+      body .networkArea .cpuGraph div,
+      body .diskArea .cpuGraph div,
+      body .trafficArea .cpuGraph div,
+      body .eventArea .cpuGraph div {
+        width: 70%;
+        aspect-ratio: 1 / 1;
+        max-width: 65%;
+        margin-bottom: -4vw; }
+    body .ramArea .cpuDate,
+    body .cpuArea .cpuDate,
+    body .networkArea .cpuDate,
+    body .diskArea .cpuDate,
+    body .trafficArea .cpuDate,
+    body .eventArea .cpuDate {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 60%;
+      height: 5vh;
+      margin: 5px auto;
+      font-size: 1vw; }
+      body .ramArea .cpuDate .dateInput > p,
+      body .cpuArea .cpuDate .dateInput > p,
+      body .networkArea .cpuDate .dateInput > p,
+      body .diskArea .cpuDate .dateInput > p,
+      body .trafficArea .cpuDate .dateInput > p,
+      body .eventArea .cpuDate .dateInput > p {
+        font-size: 4vw; }
+
+  #poprap #pop {
+    height: 88%; }
+  #poprap .moreTitle {
+    height: 12%; }
+  #poprap span {
+    font-size: 5vw; }
+
+  #poprapdisk #popdisk {
+    height: 88%; }
+  #poprapdisk .moreTitle {
+    height: 12%; }
+  #poprapdisk span {
+    font-size: 5vw; } }
+
+/*# sourceMappingURL=user.css.map */

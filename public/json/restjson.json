@@ -1,0 +1,2112 @@
+{
+  "data": [
+    {
+      "id": "20240101",
+      "CPU": {
+        "eachCPU": {
+          "CPU1": 20,
+          "CPU2": 30,
+          "CPU3": 10,
+          "CPU4": 20,
+          "CPU5": 40,
+          "CPU6": 50,
+          "CPU7": 60,
+          "CPU8": 70
+        }
+      },
+      "RAM": {
+        "TOTAL": 32,
+        "USED": 19
+      },
+      "DISK": {
+        "LOCAL": {
+          "LOCALMAIN": {
+            "TOTAL": 128,
+            "USED": 68
+          },
+          "LOCALSUB": {
+            "TOTAL": 64,
+            "USED": 48
+          }
+        },
+        "USB": {
+          "USBMAIN": {
+            "TOTAL": 64,
+            "USED": 20
+          },
+          "USBSUB": {
+            "TOTAL": 32,
+            "USED": 12
+          }
+        },
+        "WEB": {
+          "WEBMAIN": {
+            "TOTAL": 100,
+            "USED": 70
+          },
+          "WEBSUB": {
+            "TOTAL": 50,
+            "USED": 12
+          }
+        }
+      },
+      "NETWORK": {
+        "TRAFFIC": {
+          "DATAIN": 218,
+          "DATAOUT": 243
+        },
+        "SPEED": {
+          "MAX": 430,
+          "DOWNLOAD": 236,
+          "UPLOAD": 224
+        }
+      },
+      "EVENT": {
+        "OSUPDATE": 1,
+        "SAFEWALL": 1,
+        "NETWORKONOFF": 1,
+        "ATTACK": 0
+      }
+    },
+    {
+      "id": 20240102,
+      "CPU": {
+        "eachCPU": {
+          "CPU1": 10,
+          "CPU2": 73,
+          "CPU3": 96,
+          "CPU4": 89,
+          "CPU5": 78,
+          "CPU6": 49,
+          "CPU7": 62,
+          "CPU8": 54
+        }
+      },
+      "RAM": {
+        "total": 32,
+        "used": 23
+      },
+      "DISK": {
+        "Local": {
+          "Local_main": {
+            "total": 128,
+            "used": 77
+          },
+          "Local_sub": {
+            "total": 64,
+            "used": 32
+          }
+        },
+        "USB": {
+          "USB_main": {
+            "total": 64,
+            "used": 36
+          },
+          "USB_sub": {
+            "total": 32,
+            "used": 15
+          }
+        },
+        "Web": {
+          "Web_main": {
+            "total": 200,
+            "used": 102
+          },
+          "Web_sub": {
+            "total": 100,
+            "used": 22
+          }
+        }
+      },
+      "NETWORK": {
+        "traffic": {
+          "data_in": 226,
+          "data_out": 303
+        },
+        "speed": {
+          "max": 403,
+          "download": 250,
+          "upload": 187
+        }
+      },
+      "EVENT": {
+        "OSupdate": 0,
+        "safewall": 1,
+        "network": 0,
+        "attack": 1
+      }
+    },
+    {
+      "id": 20240106,
+      "CPU": {
+        "eachCPU": {
+          "CPU1": 80,
+          "CPU2": 78,
+          "CPU3": 57,
+          "CPU4": 27,
+          "CPU5": 91,
+          "CPU6": 41,
+          "CPU7": 46,
+          "CPU8": 72
+        }
+      },
+      "RAM": {
+        "total": 32,
+        "used": 21
+      },
+      "DISK": {
+        "Local": {
+          "Local_main": {
+            "total": 128,
+            "used": 70
+          },
+          "Local_sub": {
+            "total": 64,
+            "used": 23
+          }
+        },
+        "USB": {
+          "USB_main": {
+            "total": 64,
+            "used": 11
+          },
+          "USB_sub": {
+            "total": 32,
+            "used": 11
+          }
+        },
+        "Web": {
+          "Web_main": {
+            "total": 200,
+            "used": 124
+          },
+          "Web_sub": {
+            "total": 100,
+            "used": 21
+          }
+        }
+      },
+      "NETWORK": {
+        "traffic": {
+          "data_in": 264,
+          "data_out": 71
+        },
+        "speed": {
+          "max": 430,
+          "download": 194,
+          "upload": 64
+        }
+      },
+      "EVENT": {
+        "OSupdate": 1,
+        "safewall": 1,
+        "network": 0,
+        "attack": 1
+      }
+    },
+    {
+      "id": 20240104,
+      "CPU": {
+        "eachCPU": {
+          "CPU1": 50,
+          "CPU2": 44,
+          "CPU3": 47,
+          "CPU4": 96,
+          "CPU5": 27,
+          "CPU6": 70,
+          "CPU7": 50,
+          "CPU8": 17
+        }
+      },
+      "RAM": {
+        "total": 32,
+        "used": 19
+      },
+      "DISK": {
+        "Local": {
+          "Local_main": {
+            "total": 128,
+            "used": 76
+          },
+          "Local_sub": {
+            "total": 64,
+            "used": 33
+          }
+        },
+        "USB": {
+          "USB_main": {
+            "total": 64,
+            "used": 59
+          },
+          "USB_sub": {
+            "total": 32,
+            "used": 26
+          }
+        },
+        "Web": {
+          "Web_main": {
+            "total": 200,
+            "used": 118
+          },
+          "Web_sub": {
+            "total": 100,
+            "used": 20
+          }
+        }
+      },
+      "NETWORK": {
+        "traffic": {
+          "data_in": 196,
+          "data_out": 59
+        },
+        "speed": {
+          "max": 446,
+          "download": 264,
+          "upload": 317
+        }
+      },
+      "EVENT": {
+        "OSupdate": 0,
+        "safewall": 1,
+        "network": 0,
+        "attack": 1
+      }
+    },
+    {
+      "id": 20240103,
+      "CPU": {
+        "eachCPU": {
+          "CPU1": 35,
+          "CPU2": 42,
+          "CPU3": 78,
+          "CPU4": 58,
+          "CPU5": 75,
+          "CPU6": 68,
+          "CPU7": 71,
+          "CPU8": 59
+        }
+      },
+      "RAM": {
+        "total": 32,
+        "used": 16
+      },
+      "DISK": {
+        "Local": {
+          "Local_main": {
+            "total": 128,
+            "used": 75
+          },
+          "Local_sub": {
+            "total": 64,
+            "used": 37
+          }
+        },
+        "USB": {
+          "USB_main": {
+            "total": 64,
+            "used": 32
+          },
+          "USB_sub": {
+            "total": 32,
+            "used": 3
+          }
+        },
+        "Web": {
+          "Web_main": {
+            "total": 200,
+            "used": 101
+          },
+          "Web_sub": {
+            "total": 100,
+            "used": 46
+          }
+        }
+      },
+      "NETWORK": {
+        "traffic": {
+          "data_in": 170,
+          "data_out": 298
+        },
+        "speed": {
+          "max": 374,
+          "download": 189,
+          "upload": 189
+        }
+      },
+      "EVENT": {
+        "OSupdate": 1,
+        "safewall": 1,
+        "network": 1,
+        "attack": 1
+      }
+    },
+    {
+      "id": 20240105,
+      "CPU": {
+        "eachCPU": {
+          "CPU1": 71,
+          "CPU2": 18,
+          "CPU3": 24,
+          "CPU4": 99,
+          "CPU5": 44,
+          "CPU6": 68,
+          "CPU7": 63,
+          "CPU8": 73
+        }
+      },
+      "RAM": {
+        "total": 32,
+        "used": 30
+      },
+      "DISK": {
+        "Local": {
+          "Local_main": {
+            "total": 128,
+            "used": 82
+          },
+          "Local_sub": {
+            "total": 64,
+            "used": 37
+          }
+        },
+        "USB": {
+          "USB_main": {
+            "total": 64,
+            "used": 53
+          },
+          "USB_sub": {
+            "total": 32,
+            "used": 14
+          }
+        },
+        "Web": {
+          "Web_main": {
+            "total": 200,
+            "used": 107
+          },
+          "Web_sub": {
+            "total": 100,
+            "used": 43
+          }
+        }
+      },
+      "NETWORK": {
+        "traffic": {
+          "data_in": 236,
+          "data_out": 262
+        },
+        "speed": {
+          "max": 408,
+          "download": 184,
+          "upload": 79
+        }
+      },
+      "EVENT": {
+        "OSupdate": 0,
+        "safewall": 0,
+        "network": 0,
+        "attack": 1
+      }
+    },
+    {
+      "id": 20240107,
+      "CPU": {
+        "eachCPU": {
+          "CPU1": 37,
+          "CPU2": 99,
+          "CPU3": 75,
+          "CPU4": 67,
+          "CPU5": 52,
+          "CPU6": 76,
+          "CPU7": 15,
+          "CPU8": 56
+        }
+      },
+      "RAM": {
+        "total": 32,
+        "used": 26
+      },
+      "DISK": {
+        "Local": {
+          "Local_main": {
+            "total": 128,
+            "used": 76
+          },
+          "Local_sub": {
+            "total": 64,
+            "used": 21
+          }
+        },
+        "USB": {
+          "USB_main": {
+            "total": 64,
+            "used": 41
+          },
+          "USB_sub": {
+            "total": 32,
+            "used": 19
+          }
+        },
+        "Web": {
+          "Web_main": {
+            "total": 200,
+            "used": 115
+          },
+          "Web_sub": {
+            "total": 100,
+            "used": 42
+          }
+        }
+      },
+      "NETWORK": {
+        "traffic": {
+          "data_in": 20,
+          "data_out": 254
+        },
+        "speed": {
+          "max": 401,
+          "download": 216,
+          "upload": 193
+        }
+      },
+      "EVENT": {
+        "OSupdate": 0,
+        "safewall": 1,
+        "network": 0,
+        "attack": 1
+      }
+    },
+    {
+      "id": 20240115,
+      "CPU": {
+        "eachCPU": {
+          "CPU1": 28,
+          "CPU2": 97,
+          "CPU3": 33,
+          "CPU4": 59,
+          "CPU5": 49,
+          "CPU6": 81,
+          "CPU7": 99,
+          "CPU8": 21
+        }
+      },
+      "RAM": {
+        "total": 32,
+        "used": 31
+      },
+      "DISK": {
+        "Local": {
+          "Local_main": {
+            "total": 128,
+            "used": 73
+          },
+          "Local_sub": {
+            "total": 64,
+            "used": 32
+          }
+        },
+        "USB": {
+          "USB_main": {
+            "total": 64,
+            "used": 19
+          },
+          "USB_sub": {
+            "total": 32,
+            "used": 12
+          }
+        },
+        "Web": {
+          "Web_main": {
+            "total": 200,
+            "used": 125
+          },
+          "Web_sub": {
+            "total": 100,
+            "used": 23
+          }
+        }
+      },
+      "NETWORK": {
+        "traffic": {
+          "data_in": 47,
+          "data_out": 244
+        },
+        "speed": {
+          "max": 356,
+          "download": 256,
+          "upload": 155
+        }
+      },
+      "EVENT": {
+        "OSupdate": 1,
+        "safewall": 0,
+        "network": 0,
+        "attack": 0
+      }
+    },
+    {
+      "id": 20240110,
+      "CPU": {
+        "eachCPU": {
+          "CPU1": 31,
+          "CPU2": 54,
+          "CPU3": 49,
+          "CPU4": 74,
+          "CPU5": 66,
+          "CPU6": 91,
+          "CPU7": 53,
+          "CPU8": 33
+        }
+      },
+      "RAM": {
+        "total": 32,
+        "used": 25
+      },
+      "DISK": {
+        "Local": {
+          "Local_main": {
+            "total": 128,
+            "used": 71
+          },
+          "Local_sub": {
+            "total": 64,
+            "used": 35
+          }
+        },
+        "USB": {
+          "USB_main": {
+            "total": 64,
+            "used": 9
+          },
+          "USB_sub": {
+            "total": 32,
+            "used": 28
+          }
+        },
+        "Web": {
+          "Web_main": {
+            "total": 200,
+            "used": 127
+          },
+          "Web_sub": {
+            "total": 100,
+            "used": 38
+          }
+        }
+      },
+      "NETWORK": {
+        "traffic": {
+          "data_in": 66,
+          "data_out": 88
+        },
+        "speed": {
+          "max": 430,
+          "download": 195,
+          "upload": 305
+        }
+      },
+      "EVENT": {
+        "OSupdate": 1,
+        "safewall": 0,
+        "network": 0,
+        "attack": 1
+      }
+    },
+    {
+      "id": 20240114,
+      "CPU": {
+        "eachCPU": {
+          "CPU1": 51,
+          "CPU2": 45,
+          "CPU3": 35,
+          "CPU4": 35,
+          "CPU5": 40,
+          "CPU6": 27,
+          "CPU7": 79,
+          "CPU8": 74
+        }
+      },
+      "RAM": {
+        "total": 32,
+        "used": 29
+      },
+      "DISK": {
+        "Local": {
+          "Local_main": {
+            "total": 128,
+            "used": 85
+          },
+          "Local_sub": {
+            "total": 64,
+            "used": 21
+          }
+        },
+        "USB": {
+          "USB_main": {
+            "total": 64,
+            "used": 4
+          },
+          "USB_sub": {
+            "total": 32,
+            "used": 1
+          }
+        },
+        "Web": {
+          "Web_main": {
+            "total": 200,
+            "used": 108
+          },
+          "Web_sub": {
+            "total": 100,
+            "used": 21
+          }
+        }
+      },
+      "NETWORK": {
+        "traffic": {
+          "data_in": 198,
+          "data_out": 241
+        },
+        "speed": {
+          "max": 411,
+          "download": 88,
+          "upload": 260
+        }
+      },
+      "EVENT": {
+        "OSupdate": 0,
+        "safewall": 0,
+        "network": 1,
+        "attack": 1
+      }
+    },
+    {
+      "id": 20240109,
+      "CPU": {
+        "eachCPU": {
+          "CPU1": 75,
+          "CPU2": 95,
+          "CPU3": 73,
+          "CPU4": 73,
+          "CPU5": 70,
+          "CPU6": 43,
+          "CPU7": 97,
+          "CPU8": 45
+        }
+      },
+      "RAM": {
+        "total": 32,
+        "used": 22
+      },
+      "DISK": {
+        "Local": {
+          "Local_main": {
+            "total": 128,
+            "used": 78
+          },
+          "Local_sub": {
+            "total": 64,
+            "used": 31
+          }
+        },
+        "USB": {
+          "USB_main": {
+            "total": 64,
+            "used": 30
+          },
+          "USB_sub": {
+            "total": 32,
+            "used": 24
+          }
+        },
+        "Web": {
+          "Web_main": {
+            "total": 200,
+            "used": 129
+          },
+          "Web_sub": {
+            "total": 100,
+            "used": 27
+          }
+        }
+      },
+      "NETWORK": {
+        "traffic": {
+          "data_in": 168,
+          "data_out": 47
+        },
+        "speed": {
+          "max": 448,
+          "download": 305,
+          "upload": 251
+        }
+      },
+      "EVENT": {
+        "OSupdate": 1,
+        "safewall": 0,
+        "network": 1,
+        "attack": 0
+      }
+    },
+    {
+      "id": 20240108,
+      "CPU": {
+        "eachCPU": {
+          "CPU1": 57,
+          "CPU2": 61,
+          "CPU3": 59,
+          "CPU4": 52,
+          "CPU5": 45,
+          "CPU6": 30,
+          "CPU7": 47,
+          "CPU8": 55
+        }
+      },
+      "RAM": {
+        "total": 32,
+        "used": 27
+      },
+      "DISK": {
+        "Local": {
+          "Local_main": {
+            "total": 128,
+            "used": 80
+          },
+          "Local_sub": {
+            "total": 64,
+            "used": 37
+          }
+        },
+        "USB": {
+          "USB_main": {
+            "total": 64,
+            "used": 11
+          },
+          "USB_sub": {
+            "total": 32,
+            "used": 9
+          }
+        },
+        "Web": {
+          "Web_main": {
+            "total": 200,
+            "used": 104
+          },
+          "Web_sub": {
+            "total": 100,
+            "used": 43
+          }
+        }
+      },
+      "NETWORK": {
+        "traffic": {
+          "data_in": 194,
+          "data_out": 145
+        },
+        "speed": {
+          "max": 387,
+          "download": 247,
+          "upload": 240
+        }
+      },
+      "EVENT": {
+        "OSupdate": 0,
+        "safewall": 1,
+        "network": 1,
+        "attack": 1
+      }
+    },
+    {
+      "id": 20240111,
+      "CPU": {
+        "eachCPU": {
+          "CPU1": 11,
+          "CPU2": 56,
+          "CPU3": 55,
+          "CPU4": 49,
+          "CPU5": 43,
+          "CPU6": 88,
+          "CPU7": 52,
+          "CPU8": 13
+        }
+      },
+      "RAM": {
+        "total": 32,
+        "used": 31
+      },
+      "DISK": {
+        "Local": {
+          "Local_main": {
+            "total": 128,
+            "used": 80
+          },
+          "Local_sub": {
+            "total": 64,
+            "used": 24
+          }
+        },
+        "USB": {
+          "USB_main": {
+            "total": 64,
+            "used": 1
+          },
+          "USB_sub": {
+            "total": 32,
+            "used": 14
+          }
+        },
+        "Web": {
+          "Web_main": {
+            "total": 200,
+            "used": 102
+          },
+          "Web_sub": {
+            "total": 100,
+            "used": 42
+          }
+        }
+      },
+      "NETWORK": {
+        "traffic": {
+          "data_in": 126,
+          "data_out": 301
+        },
+        "speed": {
+          "max": 438,
+          "download": 86,
+          "upload": 227
+        }
+      },
+      "EVENT": {
+        "OSupdate": 0,
+        "safewall": 1,
+        "network": 0,
+        "attack": 0
+      }
+    },
+    {
+      "id": 20240116,
+      "CPU": {
+        "eachCPU": {
+          "CPU1": 49,
+          "CPU2": 17,
+          "CPU3": 77,
+          "CPU4": 10,
+          "CPU5": 57,
+          "CPU6": 49,
+          "CPU7": 90,
+          "CPU8": 10
+        }
+      },
+      "RAM": {
+        "total": 32,
+        "used": 31
+      },
+      "DISK": {
+        "Local": {
+          "Local_main": {
+            "total": 128,
+            "used": 87
+          },
+          "Local_sub": {
+            "total": 64,
+            "used": 27
+          }
+        },
+        "USB": {
+          "USB_main": {
+            "total": 64,
+            "used": 50
+          },
+          "USB_sub": {
+            "total": 32,
+            "used": 2
+          }
+        },
+        "Web": {
+          "Web_main": {
+            "total": 200,
+            "used": 118
+          },
+          "Web_sub": {
+            "total": 100,
+            "used": 30
+          }
+        }
+      },
+      "NETWORK": {
+        "traffic": {
+          "data_in": 114,
+          "data_out": 316
+        },
+        "speed": {
+          "max": 432,
+          "download": 170,
+          "upload": 199
+        }
+      },
+      "EVENT": {
+        "OSupdate": 0,
+        "safewall": 0,
+        "network": 0,
+        "attack": 1
+      }
+    },
+    {
+      "id": 20240117,
+      "CPU": {
+        "eachCPU": {
+          "CPU1": 96,
+          "CPU2": 79,
+          "CPU3": 23,
+          "CPU4": 21,
+          "CPU5": 26,
+          "CPU6": 43,
+          "CPU7": 78,
+          "CPU8": 81
+        }
+      },
+      "RAM": {
+        "total": 32,
+        "used": 21
+      },
+      "DISK": {
+        "Local": {
+          "Local_main": {
+            "total": 128,
+            "used": 72
+          },
+          "Local_sub": {
+            "total": 64,
+            "used": 32
+          }
+        },
+        "USB": {
+          "USB_main": {
+            "total": 64,
+            "used": 24
+          },
+          "USB_sub": {
+            "total": 32,
+            "used": 21
+          }
+        },
+        "Web": {
+          "Web_main": {
+            "total": 200,
+            "used": 115
+          },
+          "Web_sub": {
+            "total": 100,
+            "used": 40
+          }
+        }
+      },
+      "NETWORK": {
+        "traffic": {
+          "data_in": 298,
+          "data_out": 106
+        },
+        "speed": {
+          "max": 350,
+          "download": 74,
+          "upload": 340
+        }
+      },
+      "EVENT": {
+        "OSupdate": 1,
+        "safewall": 0,
+        "network": 1,
+        "attack": 0
+      }
+    },
+    {
+      "id": 20240118,
+      "CPU": {
+        "eachCPU": {
+          "CPU1": 62,
+          "CPU2": 79,
+          "CPU3": 18,
+          "CPU4": 53,
+          "CPU5": 96,
+          "CPU6": 87,
+          "CPU7": 73,
+          "CPU8": 41
+        }
+      },
+      "RAM": {
+        "total": 32,
+        "used": 27
+      },
+      "DISK": {
+        "Local": {
+          "Local_main": {
+            "total": 128,
+            "used": 84
+          },
+          "Local_sub": {
+            "total": 64,
+            "used": 25
+          }
+        },
+        "USB": {
+          "USB_main": {
+            "total": 64,
+            "used": 29
+          },
+          "USB_sub": {
+            "total": 32,
+            "used": 4
+          }
+        },
+        "Web": {
+          "Web_main": {
+            "total": 200,
+            "used": 104
+          },
+          "Web_sub": {
+            "total": 100,
+            "used": 39
+          }
+        }
+      },
+      "NETWORK": {
+        "traffic": {
+          "data_in": 115,
+          "data_out": 247
+        },
+        "speed": {
+          "max": 436,
+          "download": 106,
+          "upload": 296
+        }
+      },
+      "EVENT": {
+        "OSupdate": 0,
+        "safewall": 1,
+        "network": 0,
+        "attack": 1
+      }
+    },
+    {
+      "id": 20240112,
+      "CPU": {
+        "eachCPU": {
+          "CPU1": 67,
+          "CPU2": 78,
+          "CPU3": 38,
+          "CPU4": 90,
+          "CPU5": 10,
+          "CPU6": 72,
+          "CPU7": 77,
+          "CPU8": 47
+        }
+      },
+      "RAM": {
+        "total": 32,
+        "used": 31
+      },
+      "DISK": {
+        "Local": {
+          "Local_main": {
+            "total": 128,
+            "used": 87
+          },
+          "Local_sub": {
+            "total": 64,
+            "used": 32
+          }
+        },
+        "USB": {
+          "USB_main": {
+            "total": 64,
+            "used": 8
+          },
+          "USB_sub": {
+            "total": 32,
+            "used": 2
+          }
+        },
+        "Web": {
+          "Web_main": {
+            "total": 200,
+            "used": 121
+          },
+          "Web_sub": {
+            "total": 100,
+            "used": 35
+          }
+        }
+      },
+      "NETWORK": {
+        "traffic": {
+          "data_in": 278,
+          "data_out": 42
+        },
+        "speed": {
+          "max": 372,
+          "download": 159,
+          "upload": 328
+        }
+      },
+      "EVENT": {
+        "OSupdate": 0,
+        "safewall": 1,
+        "network": 1,
+        "attack": 1
+      }
+    },
+    {
+      "id": 20240113,
+      "CPU": {
+        "eachCPU": {
+          "CPU1": 51,
+          "CPU2": 19,
+          "CPU3": 84,
+          "CPU4": 47,
+          "CPU5": 82,
+          "CPU6": 57,
+          "CPU7": 18,
+          "CPU8": 45
+        }
+      },
+      "RAM": {
+        "total": 32,
+        "used": 24
+      },
+      "DISK": {
+        "Local": {
+          "Local_main": {
+            "total": 128,
+            "used": 88
+          },
+          "Local_sub": {
+            "total": 64,
+            "used": 31
+          }
+        },
+        "USB": {
+          "USB_main": {
+            "total": 64,
+            "used": 51
+          },
+          "USB_sub": {
+            "total": 32,
+            "used": 6
+          }
+        },
+        "Web": {
+          "Web_main": {
+            "total": 200,
+            "used": 120
+          },
+          "Web_sub": {
+            "total": 100,
+            "used": 26
+          }
+        }
+      },
+      "NETWORK": {
+        "traffic": {
+          "data_in": 306,
+          "data_out": 295
+        },
+        "speed": {
+          "max": 388,
+          "download": 297,
+          "upload": 303
+        }
+      },
+      "EVENT": {
+        "OSupdate": 1,
+        "safewall": 0,
+        "network": 0,
+        "attack": 0
+      }
+    },
+    {
+      "id": 20240119,
+      "CPU": {
+        "eachCPU": {
+          "CPU1": 73,
+          "CPU2": 14,
+          "CPU3": 39,
+          "CPU4": 37,
+          "CPU5": 20,
+          "CPU6": 19,
+          "CPU7": 27,
+          "CPU8": 71
+        }
+      },
+      "RAM": {
+        "total": 32,
+        "used": 29
+      },
+      "DISK": {
+        "Local": {
+          "Local_main": {
+            "total": 128,
+            "used": 72
+          },
+          "Local_sub": {
+            "total": 64,
+            "used": 30
+          }
+        },
+        "USB": {
+          "USB_main": {
+            "total": 64,
+            "used": 20
+          },
+          "USB_sub": {
+            "total": 32,
+            "used": 19
+          }
+        },
+        "Web": {
+          "Web_main": {
+            "total": 200,
+            "used": 124
+          },
+          "Web_sub": {
+            "total": 100,
+            "used": 40
+          }
+        }
+      },
+      "NETWORK": {
+        "traffic": {
+          "data_in": 145,
+          "data_out": 81
+        },
+        "speed": {
+          "max": 449,
+          "download": 174,
+          "upload": 197
+        }
+      },
+      "EVENT": {
+        "OSupdate": 0,
+        "safewall": 0,
+        "network": 0,
+        "attack": 0
+      }
+    },
+    {
+      "id": 20240124,
+      "CPU": {
+        "eachCPU": {
+          "CPU1": 68,
+          "CPU2": 49,
+          "CPU3": 19,
+          "CPU4": 40,
+          "CPU5": 91,
+          "CPU6": 92,
+          "CPU7": 43,
+          "CPU8": 98
+        }
+      },
+      "RAM": {
+        "total": 32,
+        "used": 27
+      },
+      "DISK": {
+        "Local": {
+          "Local_main": {
+            "total": 128,
+            "used": 73
+          },
+          "Local_sub": {
+            "total": 64,
+            "used": 38
+          }
+        },
+        "USB": {
+          "USB_main": {
+            "total": 64,
+            "used": 39
+          },
+          "USB_sub": {
+            "total": 32,
+            "used": 14
+          }
+        },
+        "Web": {
+          "Web_main": {
+            "total": 200,
+            "used": 109
+          },
+          "Web_sub": {
+            "total": 100,
+            "used": 39
+          }
+        }
+      },
+      "NETWORK": {
+        "traffic": {
+          "data_in": 183,
+          "data_out": 294
+        },
+        "speed": {
+          "max": 420,
+          "download": 239,
+          "upload": 168
+        }
+      },
+      "EVENT": {
+        "OSupdate": 1,
+        "safewall": 1,
+        "network": 1,
+        "attack": 1
+      }
+    },
+    {
+      "id": 20240120,
+      "CPU": {
+        "eachCPU": {
+          "CPU1": 26,
+          "CPU2": 79,
+          "CPU3": 93,
+          "CPU4": 33,
+          "CPU5": 86,
+          "CPU6": 71,
+          "CPU7": 85,
+          "CPU8": 61
+        }
+      },
+      "RAM": {
+        "total": 32,
+        "used": 20
+      },
+      "DISK": {
+        "Local": {
+          "Local_main": {
+            "total": 128,
+            "used": 78
+          },
+          "Local_sub": {
+            "total": 64,
+            "used": 30
+          }
+        },
+        "USB": {
+          "USB_main": {
+            "total": 64,
+            "used": 34
+          },
+          "USB_sub": {
+            "total": 32,
+            "used": 22
+          }
+        },
+        "Web": {
+          "Web_main": {
+            "total": 200,
+            "used": 124
+          },
+          "Web_sub": {
+            "total": 100,
+            "used": 21
+          }
+        }
+      },
+      "NETWORK": {
+        "traffic": {
+          "data_in": 143,
+          "data_out": 64
+        },
+        "speed": {
+          "max": 433,
+          "download": 128,
+          "upload": 171
+        }
+      },
+      "EVENT": {
+        "OSupdate": 1,
+        "safewall": 1,
+        "network": 1,
+        "attack": 0
+      }
+    },
+    {
+      "id": 20240125,
+      "CPU": {
+        "eachCPU": {
+          "CPU1": 72,
+          "CPU2": 23,
+          "CPU3": 65,
+          "CPU4": 61,
+          "CPU5": 56,
+          "CPU6": 71,
+          "CPU7": 92,
+          "CPU8": 32
+        }
+      },
+      "RAM": {
+        "total": 32,
+        "used": 26
+      },
+      "DISK": {
+        "Local": {
+          "Local_main": {
+            "total": 128,
+            "used": 77
+          },
+          "Local_sub": {
+            "total": 64,
+            "used": 29
+          }
+        },
+        "USB": {
+          "USB_main": {
+            "total": 64,
+            "used": 56
+          },
+          "USB_sub": {
+            "total": 32,
+            "used": 0
+          }
+        },
+        "Web": {
+          "Web_main": {
+            "total": 200,
+            "used": 129
+          },
+          "Web_sub": {
+            "total": 100,
+            "used": 43
+          }
+        }
+      },
+      "NETWORK": {
+        "traffic": {
+          "data_in": 307,
+          "data_out": 309
+        },
+        "speed": {
+          "max": 376,
+          "download": 286,
+          "upload": 231
+        }
+      },
+      "EVENT": {
+        "OSupdate": 0,
+        "safewall": 1,
+        "network": 0,
+        "attack": 1
+      }
+    },
+    {
+      "id": 20240123,
+      "CPU": {
+        "eachCPU": {
+          "CPU1": 74,
+          "CPU2": 95,
+          "CPU3": 94,
+          "CPU4": 16,
+          "CPU5": 51,
+          "CPU6": 42,
+          "CPU7": 69,
+          "CPU8": 81
+        }
+      },
+      "RAM": {
+        "total": 32,
+        "used": 25
+      },
+      "DISK": {
+        "Local": {
+          "Local_main": {
+            "total": 128,
+            "used": 86
+          },
+          "Local_sub": {
+            "total": 64,
+            "used": 24
+          }
+        },
+        "USB": {
+          "USB_main": {
+            "total": 64,
+            "used": 21
+          },
+          "USB_sub": {
+            "total": 32,
+            "used": 10
+          }
+        },
+        "Web": {
+          "Web_main": {
+            "total": 200,
+            "used": 118
+          },
+          "Web_sub": {
+            "total": 100,
+            "used": 43
+          }
+        }
+      },
+      "NETWORK": {
+        "traffic": {
+          "data_in": 285,
+          "data_out": 271
+        },
+        "speed": {
+          "max": 437,
+          "download": 178,
+          "upload": 256
+        }
+      },
+      "EVENT": {
+        "OSupdate": 0,
+        "safewall": 1,
+        "network": 0,
+        "attack": 0
+      }
+    },
+    {
+      "id": 20240122,
+      "CPU": {
+        "eachCPU": {
+          "CPU1": 69,
+          "CPU2": 16,
+          "CPU3": 23,
+          "CPU4": 99,
+          "CPU5": 42,
+          "CPU6": 92,
+          "CPU7": 56,
+          "CPU8": 53
+        }
+      },
+      "RAM": {
+        "total": 32,
+        "used": 30
+      },
+      "DISK": {
+        "Local": {
+          "Local_main": {
+            "total": 128,
+            "used": 85
+          },
+          "Local_sub": {
+            "total": 64,
+            "used": 30
+          }
+        },
+        "USB": {
+          "USB_main": {
+            "total": 64,
+            "used": 1
+          },
+          "USB_sub": {
+            "total": 32,
+            "used": 29
+          }
+        },
+        "Web": {
+          "Web_main": {
+            "total": 200,
+            "used": 117
+          },
+          "Web_sub": {
+            "total": 100,
+            "used": 35
+          }
+        }
+      },
+      "NETWORK": {
+        "traffic": {
+          "data_in": 131,
+          "data_out": 91
+        },
+        "speed": {
+          "max": 430,
+          "download": 43,
+          "upload": 246
+        }
+      },
+      "EVENT": {
+        "OSupdate": 0,
+        "safewall": 0,
+        "network": 0,
+        "attack": 1
+      }
+    },
+    {
+      "id": 20240121,
+      "CPU": {
+        "eachCPU": {
+          "CPU1": 62,
+          "CPU2": 31,
+          "CPU3": 64,
+          "CPU4": 56,
+          "CPU5": 59,
+          "CPU6": 21,
+          "CPU7": 93,
+          "CPU8": 62
+        }
+      },
+      "RAM": {
+        "total": 32,
+        "used": 21
+      },
+      "DISK": {
+        "Local": {
+          "Local_main": {
+            "total": 128,
+            "used": 89
+          },
+          "Local_sub": {
+            "total": 64,
+            "used": 34
+          }
+        },
+        "USB": {
+          "USB_main": {
+            "total": 64,
+            "used": 1
+          },
+          "USB_sub": {
+            "total": 32,
+            "used": 16
+          }
+        },
+        "Web": {
+          "Web_main": {
+            "total": 200,
+            "used": 117
+          },
+          "Web_sub": {
+            "total": 100,
+            "used": 24
+          }
+        }
+      },
+      "NETWORK": {
+        "traffic": {
+          "data_in": 105,
+          "data_out": 275
+        },
+        "speed": {
+          "max": 401,
+          "download": 52,
+          "upload": 52
+        }
+      },
+      "EVENT": {
+        "OSupdate": 1,
+        "safewall": 0,
+        "network": 0,
+        "attack": 1
+      }
+    },
+    {
+      "id": 20240130,
+      "CPU": {
+        "eachCPU": {
+          "CPU1": 51,
+          "CPU2": 75,
+          "CPU3": 25,
+          "CPU4": 87,
+          "CPU5": 29,
+          "CPU6": 95,
+          "CPU7": 23,
+          "CPU8": 18
+        }
+      },
+      "RAM": {
+        "total": 32,
+        "used": 20
+      },
+      "DISK": {
+        "Local": {
+          "Local_main": {
+            "total": 128,
+            "used": 83
+          },
+          "Local_sub": {
+            "total": 64,
+            "used": 34
+          }
+        },
+        "USB": {
+          "USB_main": {
+            "total": 64,
+            "used": 54
+          },
+          "USB_sub": {
+            "total": 32,
+            "used": 28
+          }
+        },
+        "Web": {
+          "Web_main": {
+            "total": 200,
+            "used": 104
+          },
+          "Web_sub": {
+            "total": 100,
+            "used": 36
+          }
+        }
+      },
+      "NETWORK": {
+        "traffic": {
+          "data_in": 279,
+          "data_out": 227
+        },
+        "speed": {
+          "max": 387,
+          "download": 260,
+          "upload": 233
+        }
+      },
+      "EVENT": {
+        "OSupdate": 0,
+        "safewall": 1,
+        "network": 0,
+        "attack": 0
+      }
+    },
+    {
+      "id": 20240127,
+      "CPU": {
+        "eachCPU": {
+          "CPU1": 52,
+          "CPU2": 44,
+          "CPU3": 64,
+          "CPU4": 47,
+          "CPU5": 76,
+          "CPU6": 48,
+          "CPU7": 47,
+          "CPU8": 23
+        }
+      },
+      "RAM": {
+        "total": 32,
+        "used": 28
+      },
+      "DISK": {
+        "Local": {
+          "Local_main": {
+            "total": 128,
+            "used": 78
+          },
+          "Local_sub": {
+            "total": 64,
+            "used": 32
+          }
+        },
+        "USB": {
+          "USB_main": {
+            "total": 64,
+            "used": 57
+          },
+          "USB_sub": {
+            "total": 32,
+            "used": 23
+          }
+        },
+        "Web": {
+          "Web_main": {
+            "total": 200,
+            "used": 112
+          },
+          "Web_sub": {
+            "total": 100,
+            "used": 25
+          }
+        }
+      },
+      "NETWORK": {
+        "traffic": {
+          "data_in": 276,
+          "data_out": 226
+        },
+        "speed": {
+          "max": 359,
+          "download": 176,
+          "upload": 303
+        }
+      },
+      "EVENT": {
+        "OSupdate": 0,
+        "safewall": 0,
+        "network": 1,
+        "attack": 1
+      }
+    },
+    {
+      "id": 20240129,
+      "CPU": {
+        "eachCPU": {
+          "CPU1": 20,
+          "CPU2": 18,
+          "CPU3": 45,
+          "CPU4": 10,
+          "CPU5": 66,
+          "CPU6": 38,
+          "CPU7": 10,
+          "CPU8": 94
+        }
+      },
+      "RAM": {
+        "total": 32,
+        "used": 18
+      },
+      "DISK": {
+        "Local": {
+          "Local_main": {
+            "total": 128,
+            "used": 70
+          },
+          "Local_sub": {
+            "total": 64,
+            "used": 22
+          }
+        },
+        "USB": {
+          "USB_main": {
+            "total": 64,
+            "used": 46
+          },
+          "USB_sub": {
+            "total": 32,
+            "used": 24
+          }
+        },
+        "Web": {
+          "Web_main": {
+            "total": 200,
+            "used": 125
+          },
+          "Web_sub": {
+            "total": 100,
+            "used": 23
+          }
+        }
+      },
+      "NETWORK": {
+        "traffic": {
+          "data_in": 190,
+          "data_out": 308
+        },
+        "speed": {
+          "max": 441,
+          "download": 251,
+          "upload": 319
+        }
+      },
+      "EVENT": {
+        "OSupdate": 1,
+        "safewall": 0,
+        "network": 0,
+        "attack": 1
+      }
+    },
+    {
+      "id": 20240126,
+      "CPU": {
+        "eachCPU": {
+          "CPU1": 50,
+          "CPU2": 22,
+          "CPU3": 10,
+          "CPU4": 97,
+          "CPU5": 99,
+          "CPU6": 42,
+          "CPU7": 15,
+          "CPU8": 91
+        }
+      },
+      "RAM": {
+        "total": 32,
+        "used": 18
+      },
+      "DISK": {
+        "Local": {
+          "Local_main": {
+            "total": 128,
+            "used": 87
+          },
+          "Local_sub": {
+            "total": 64,
+            "used": 28
+          }
+        },
+        "USB": {
+          "USB_main": {
+            "total": 64,
+            "used": 52
+          },
+          "USB_sub": {
+            "total": 32,
+            "used": 26
+          }
+        },
+        "Web": {
+          "Web_main": {
+            "total": 200,
+            "used": 125
+          },
+          "Web_sub": {
+            "total": 100,
+            "used": 33
+          }
+        }
+      },
+      "NETWORK": {
+        "traffic": {
+          "data_in": 289,
+          "data_out": 60
+        },
+        "speed": {
+          "max": 350,
+          "download": 178,
+          "upload": 239
+        }
+      },
+      "EVENT": {
+        "OSupdate": 1,
+        "safewall": 1,
+        "network": 0,
+        "attack": 0
+      }
+    },
+    {
+      "id": 20240128,
+      "CPU": {
+        "eachCPU": {
+          "CPU1": 45,
+          "CPU2": 98,
+          "CPU3": 75,
+          "CPU4": 17,
+          "CPU5": 67,
+          "CPU6": 45,
+          "CPU7": 81,
+          "CPU8": 36
+        }
+      },
+      "RAM": {
+        "total": 32,
+        "used": 31
+      },
+      "DISK": {
+        "Local": {
+          "Local_main": {
+            "total": 128,
+            "used": 87
+          },
+          "Local_sub": {
+            "total": 64,
+            "used": 32
+          }
+        },
+        "USB": {
+          "USB_main": {
+            "total": 64,
+            "used": 59
+          },
+          "USB_sub": {
+            "total": 32,
+            "used": 22
+          }
+        },
+        "Web": {
+          "Web_main": {
+            "total": 200,
+            "used": 102
+          },
+          "Web_sub": {
+            "total": 100,
+            "used": 33
+          }
+        }
+      },
+      "NETWORK": {
+        "traffic": {
+          "data_in": 212,
+          "data_out": 54
+        },
+        "speed": {
+          "max": 406,
+          "download": 281,
+          "upload": 302
+        }
+      },
+      "EVENT": {
+        "OSupdate": 1,
+        "safewall": 0,
+        "network": 0,
+        "attack": 1
+      }
+    },
+    {
+      "id": 20240131,
+      "CPU": {
+        "eachCPU": {
+          "CPU1": 18,
+          "CPU2": 58,
+          "CPU3": 56,
+          "CPU4": 61,
+          "CPU5": 25,
+          "CPU6": 20,
+          "CPU7": 65,
+          "CPU8": 92
+        }
+      },
+      "RAM": {
+        "total": 32,
+        "used": 21
+      },
+      "DISK": {
+        "Local": {
+          "Local_main": {
+            "total": 128,
+            "used": 83
+          },
+          "Local_sub": {
+            "total": 64,
+            "used": 35
+          }
+        },
+        "USB": {
+          "USB_main": {
+            "total": 64,
+            "used": 11
+          },
+          "USB_sub": {
+            "total": 32,
+            "used": 29
+          }
+        },
+        "Web": {
+          "Web_main": {
+            "total": 200,
+            "used": 100
+          },
+          "Web_sub": {
+            "total": 100,
+            "used": 41
+          }
+        }
+      },
+      "NETWORK": {
+        "traffic": {
+          "data_in": 252,
+          "data_out": 43
+        },
+        "speed": {
+          "max": 361,
+          "download": 115,
+          "upload": 318
+        }
+      },
+      "EVENT": {
+        "OSupdate": 0,
+        "safewall": 0,
+        "network": 0,
+        "attack": 1
+      }
+    }
+  ]
+}

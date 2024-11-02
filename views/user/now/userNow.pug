@@ -1,0 +1,40 @@
+//- 레이아웃 불러오기
+extends ../userLayout.pug
+
+//- pug파일 불러오기
+block ramPug
+   include ./ramNow.pug
+
+block cpuPug
+   include ./cpuNow.pug
+
+block networkPug
+   include ./networkNow.pug
+
+block diskPug
+   include ./diskNow.pug
+
+block trafficPug
+   include ./trafficNow.pug
+
+block eventPug
+   include ./eventNow.pug
+
+//- 스크립트 불러오기
+block jsRam
+   script(src="/user/js/now/jsRamNow.js")
+
+block jsCpu
+   script(src="/user/js/now/jsCpuNow.js")
+
+block jsNetwork
+   script(src="/user/js/now/jsNetworkNow.js")
+
+block jsDisk
+   script(src="/user/js/now/jsDiskNow.js")
+
+block jsTraffic
+   script(src="/user/js/now/jsTrafficNow.js")
+
+block jsEvent
+   script(src="/user/js/now/jsEventNow.js")

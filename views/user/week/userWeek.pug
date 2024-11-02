@@ -1,0 +1,43 @@
+//- 레이아웃 불러오기
+extends ../userLayout.pug
+
+//- pug파일 불러오기
+block ramPug
+   include ./ramWeek.pug
+
+block cpuPug
+   include ./cpuWeek.pug
+
+block networkPug
+   include ./networkWeek.pug
+
+block diskPug
+   include ./diskWeek.pug
+
+block trafficPug
+   include ./trafficWeek.pug
+
+block eventPug
+   include ./eventWeek.pug
+
+//- 스크립트 불러오기
+block abstractClass
+   script(src="/user/js/week/A_WeekBoard.js")
+   
+block jsRam
+   script(src="/user/js/week/jsRamWeek.js")
+
+block jsCpu
+   script(src="/user/js/week/jsCpuWeek.js")
+
+block jsNetwork
+   script(src="/user/js/week/jsNetworkWeek.js")
+
+block jsDisk
+   script(src="/user/js/week/jsDiskWeek.js")
+
+block jsTraffic
+   script(src="/user/js/week/jsTrafficWeek.js")
+
+block jsEvent
+   script(src="/user/js/week/jsEventWeek.js")

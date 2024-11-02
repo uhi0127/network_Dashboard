@@ -1,0 +1,16 @@
+section.cpuArea 
+	div(style="width:100%; height:100%; display:none; justify-content:center; align-items:center; z-index:99;")#poprap
+		div(style="width:100%; height:100%; display:flex; justify-content:space-around; align-items:center; background-color: white; ; overflow:hidden; flex-direction:column; border-radius:0.5vw;")
+			div(style="width:100%; top:0;background-color:#8EABD3; display:flex; justify-content:space-around; align-items:center;").moreTitle
+				span(style="width:80%; text-align:center;") Each Core Detail
+				button#popexit(style="border-radius: 100%; font-style:bold;border:none; cursor:pointer;")
+					i.fa-solid.fa-xmark
+			div#pop(style="width:80%; display: inline-block;  overflow:hidden;")
+	div.titleBox 
+		i.fa-solid.fa-microchip
+		p CPU 
+			button.more#cpuMore 더보기&gt;
+	div#cpuGraph.cpuGraph 
+		div.cpuNow#cpuNow(data-cpuId="cpu1")
+		//- div.cpuWeek#cpuWeek(data-cpuId="cpu2")
+		//- div.cpuMonth#cpuMonth(data-cpuId="cpu3")

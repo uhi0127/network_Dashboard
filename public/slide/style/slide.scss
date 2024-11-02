@@ -1,0 +1,52 @@
+$default-back:#f3f5f8;
+$box-color:#FFFFFF;
+$default-radius:5px;
+$default-shadow:10px 10px 10px gray;
+$max-width:100vw;
+$max-height:100%;
+$btn-color:#00BEEA;
+$default-font-size:1vw;
+$color-white: #fcfcfc; 
+$color-red: #E63C2D;
+$title-back:#8EABD3;;
+$default-margin:0.83vw;
+$contents-color:#d5d5d5;
+$input-width:30%;
+$input-height:100%;
+
+*{margin:0; padding:0; font-family: 'SUITE-Regular','sans-serif'; list-style:none; text-decoration-line: none;}
+.sideMenu{
+    width:7%;
+    height:100vh;
+    background-color:#3D414F;
+    color:$color-white;
+    display: flex;
+    justify-content: center;
+    .fa-house, .fa-gear, .fa-rotate {
+        color: white;
+        font-size: 2.5vw; 
+        margin: 1.67vw; 
+    }
+    ul{
+        width:100%;
+        display:flex;
+        flex-flow:column;
+        align-items:center;
+        li{
+            width:100%;
+            margin:3.33%;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            a{
+                display:flex;
+                align-items:center;
+                justify-content:center;
+            }
+            img{
+                width:3vw;
+                margin:18%;
+            }
+        }
+    }
+}

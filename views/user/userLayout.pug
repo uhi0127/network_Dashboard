@@ -1,0 +1,66 @@
+doctype html
+html(lang="ko")
+   head
+      meta(charset="UTF-8")
+      meta(name='viewport', content='width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes')
+      title 네트워크 대시보드
+      link(rel='stylesheet', href='./user/style/reset.css')
+      link(rel='stylesheet', href='./user/style/user.css')
+      link(type="image/png" sizes="32x32" rel="icon" href="./user/img/dash2.png")
+      script(src="/user/js/p5.js")
+      //- link(rel='stylesheet', href='./user/style/responsive.css')
+      //- fontawesome 불러오기 
+      script(src="https://kit.fontawesome.com/7d69e807df.js", crossorigin="anonymous")
+   body
+      div.wrapper
+         //- div.moreWindow#moreWindow
+         //-       div.moreSection#moreSection
+         //-          h4.moreTitle#moreTitle
+         //-             p#titleText
+         //-          div.moreContent#moreContent
+         //-          button.moreBtn#moreBtn 확인 
+         include ../slide/slide.pug
+         div.screen
+            header
+               h1 My Computer Dashboard
+               ul
+                  li
+                     a(href="/")
+                        i.fa-solid.fa-house
+                  li
+                     a(href="/admin")
+                        i.fa-solid.fa-gear
+                  li   
+                     a(href="/now")
+                        img(src="/slide/img/now.png" alt="now" onclick="changeImage()")#nowImg.nowImg
+                  li 
+                     a(href="/week")
+                        img(src="/slide/img/week.png" alt="week" onclick="changeImage()")#weekImg.weekImg
+                  li
+                     a(href="/month")
+                        img(src="/slide/img/month.png" alt="month" onclick="changeImage()")#monthImg
+               
+               div.cpuDate
+                  button.beforeBtn#beforeBtn
+                     i.fa-solid.fa-backward-step
+                  div.dateInput#dateInput
+                     p#dateText 0000.00.00
+                  button.afterBtn#afterBtn
+                     i.fa-solid.fa-forward-step
+            main
+               block ramPug
+               block cpuPug
+               block networkPug
+               block diskPug
+               block trafficPug
+               block eventPug
+
+      script(src="/user/js/A_DataBoard.js")
+      script(src="/user/js/moreBtn.js")
+      block abstractClass
+      block jsRam
+      block jsCpu
+      block jsNetwork
+      block jsDisk
+      block jsTraffic
+      block jsEvent

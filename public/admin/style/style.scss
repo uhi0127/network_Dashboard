@@ -1,0 +1,891 @@
+$default-back:#f3f5f8;
+$box-color:#FFFFFF;
+$default-radius:5px;
+$default-shadow:10px 10px 10px gray;
+$max-width:100vw;
+$max-height:100%;
+$btn-color:#00BEEA;
+$default-font-size:1vw;
+$color-white: #fcfcfc; 
+$color-red: #E63C2D;
+$title-back:#8EABD3;;
+$default-margin:0.83vw;
+$contents-color:#E8F1FFE8;
+$input-width:30%;
+$input-height:100%;
+
+@font-face {
+    font-family: 'SUITE-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+ }
+
+*{margin:0; padding:0; font-family: 'SUITE-Regular','sans-serif'; font-size:$default-font-size; list-style:none; text-decoration-line: none;}
+h2{font-size:20px;}
+h2{
+    i{
+        margin-right:1.5vw;
+    }
+    p{
+        font-size:1.5vw;
+    }
+}
+
+input{
+    outline:none;
+}
+
+.sideMenu{
+    width:7%;
+    height:100vh;
+    background-color:#3D414F;
+    color:$color-white;
+    display: flex;
+    justify-content: center;
+    .fa-house, .fa-gear, .fa-rotate {
+        color: white;
+        font-size: 2.5vw; 
+        margin: 1.67vw; 
+    }
+    ul{
+        width:100%;
+        display:flex;
+        flex-flow:column;
+        align-items:center;
+        li{
+            width:100%;
+            margin:3.33%;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            a{
+                display:flex;
+                align-items:center;
+                justify-content:center;
+            }
+            img{
+                display:none;
+                width:3vw;
+                margin:18%;
+            }
+        }
+    }
+}
+
+body{
+    background-color:#F3F5F8;
+    .container{
+        width:100vw;
+        height:100vh;
+        display:flex;
+        flex-flow:wrap;
+        flex-direction:column;
+        .warningWindow{
+            width:100vw;
+            height:100vh;
+            position:absolute;
+            display:none;
+            justify-content: center;
+            align-items:center;
+            .warningContent{
+                width:35vw;
+                height:20vw;
+                display:flex;
+                justify-content: center;
+                align-items:center;
+                flex-direction:column;
+                background:$default-back;
+                border-radius:$default-radius;
+                .warningTitle{
+                    width:100%;
+                    height:20%;
+                    background:$title-back;
+                    display:flex;
+                    justify-content: center;
+                    align-items:center;
+                    border-radius:$default-radius $default-radius 0 0;
+                }
+                .warningMessage{
+                    width:100%;
+                    height:80%;
+                    display:flex;
+                    flex-direction:column;
+                    justify-content: center;
+                    align-items:center; 
+                }
+                .warningBtn{
+                    width:20%;
+                    height:20%;
+                    margin-bottom:5%;
+                    background-color:$btn-color;
+                    box-shadow: 3px 3px 2px -2px;
+                    border-radius: 5px;
+                    border:none;
+                    cursor:pointer;
+                    transition:0.2s;
+                }
+                .warningBtn:hover{
+                    background:$color-red;
+                    color:white;
+                }
+            }
+        }
+        i{
+            font-size:1.5vw;
+            display:flex;
+        }
+        /* .sideMenu{
+            width:7%;
+            height:100vh;
+            background-color:#3D414F;
+            color:$color-white;
+            display: flex;
+            justify-content: center;
+            .fa-house, .fa-gear, .fa-rotate {
+                color: white;
+                font-size: 2.5vw; 
+                margin: 1.67vw;
+                transition:0.2s;
+            }
+            i:hover{
+                color:$color-red;
+            }
+            ul{
+                width:100%;
+                display:flex;
+                flex-flow:column;
+                align-items:center;
+                li{
+                    width:100%;
+                    margin:3.33%;
+                    display:flex;
+                    align-items:center;
+                    justify-content:center;
+                    a{
+                        display:flex;
+                        align-items:center;
+                        justify-content:center;
+                    }
+                }
+            }
+        } */
+        h1{
+            width:90%;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            p{
+                font-size:3.33vw;
+                margin:$default-margin;
+                padding:$default-margin;
+                font-weight:900;
+            }
+            ul{
+                width:50%;
+                display:flex;
+                align-items:center;
+                justify-content:flex-end;
+                margin-right:1%;
+                li{
+                    width:20%;
+                    display:none;
+                }
+                .saveOut{
+                    width:25%;
+                    height:65%;
+                    border-radius: 5px;
+                    box-shadow:3px 3px 2px -2px;
+                    border:none;
+                    display:flex;
+                    justify-content:space-evenly;
+                    align-items:center;
+                    cursor:pointer;
+                    background-color:$btn-color;
+                    margin-right:2%;
+                    transition:0.2s;
+                    p{
+                        font-size:2vw;
+                    }
+                    img{
+                        width:20px;
+                        height:20px;
+                    }
+                }        
+                .stopStartBtn{
+                    width:4vw;
+                    height:4vw;
+                    border-radius:50%;
+                    box-shadow:3px 3px 2px -2px;
+                    border:none;
+                    display:flex;
+                    justify-content:center;
+                    align-items:center;
+                    cursor:pointer;
+                    margin-right:2%;
+                    background-color:$btn-color;
+                    transition:0.2s;
+                    .fa-pause{
+                        display:none;
+                    }
+                }
+            }
+            
+        }
+        .topAdminSection{
+            width:90%;
+            height:38vh;
+            display:flex;
+            .cpuSection{
+                width:65%;
+                height:90%;
+                display:flex;
+                justify-content:center;
+                margin:0 1%;
+                border-radius:$default-radius;
+                background-color:$box-color;
+                box-shadow:$default-shadow;
+                .cpuBox{
+                    width:100%;
+                    height:100%;
+                    h2{
+                        width:100%;
+                        height:15%;
+                        font-size:1.5vw;
+                        display:flex;
+                        justify-content:center;
+                        align-items:center;
+                        background-color:$title-back;
+                        font-weight:normal;
+                        margin-bottom: height 5%;
+                        border-radius: $default-radius $default-radius 0 0;
+                    }
+                    .cpuContentBox{
+                        height:85%;
+                        width:100%;
+                        display:flex;
+                        justify-content:center;
+                        align-items:center;
+                        flex-flow:column;
+                    }
+                    .cpuLeftValue{
+                        width:90%;
+                        height:15%;
+                        font-size:$default-font-size;
+                        display:flex;
+                        flex-flow:column;
+                        justify-content:center;
+                        align-items:center;
+                        float:left;
+                        background-color:$contents-color;
+                        border-radius:$default-radius $default-radius 0 0;
+                        a{
+                            width:100%;
+                            display:flex;
+                            justify-content:center;
+                        }
+                        h3{
+                            width:100%;
+                            display:flex;
+                            align-items:center;
+                            font-weight:normal;
+                            font-size:15px; 
+                        }
+                        input{
+                            width:20%;
+                            height:90%;
+                        }
+                    }
+                    .cpuRightValue{
+                        width:90%;
+                        height:75%;
+                        float:left;
+                        background-color:$contents-color;
+                        border-radius:0 0 $default-radius $default-radius;
+                        .cpuMinMax{
+                            display:flex;
+                            a{
+                                width:50%;
+                                display:flex;
+                                justify-content:space-around;
+                                input[type=checkbox]{
+                                    width:5%;
+                                    z-index:-999;
+                                }
+                                span{
+                                    z-index:-999;
+                                }
+                            }
+                            p{
+                                width:15%;
+                                display:flex;
+                                justify-content:flex-start;
+                            }
+                        }
+                        a{
+                            display:flex;
+                            align-items:center;
+                            .cpuCountValue{
+                                width:20px;
+                                height:20px;
+                                font-size:12px;
+                                display:flex;
+                                justify-content:center;
+                                align-items:center;
+                            }
+                        }
+                        h3{
+                            width:100%;
+                            display:flex;
+                            align-items:center;
+                            font-weight:normal;
+                            font-size:15px;
+                        }
+                        .coreValueBox{
+                            display:flex;
+                            flex-flow:wrap;
+                            width:100%;
+                            height:80%;
+                            a{
+                                width:50%;
+                                display:flex;
+                                justify-content:space-around;
+                                align-items:center;
+                                margin-bottom:1vh;
+                                input{
+                                    width:15%;
+                                }
+                                input[type=checkbox]{
+                                    width:5%;
+                                    height:60%;
+                                    border-radius:5px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .networkSection{
+                width:30%;
+                height:90%;
+                display:flex;
+                justify-content:center;
+                margin:0 1%;
+                border-radius:$default-radius;
+                background-color:$box-color;
+                box-shadow:$default-shadow;
+                .networkBox{
+                    width:100%;
+                    height:100%;
+                    display:flex;
+                    flex-flow:column;
+                    h2{
+                        width:100%;
+                        height:15%;
+                        font-size:20px;
+                        display:flex;
+                        justify-content:center;
+                        align-items:center;
+                        background-color:$title-back;
+                        font-weight:normal;
+                        border-radius: $default-radius $default-radius 0 0;
+                        p{
+                            width:auto;
+                        }
+                    }
+                    .networkContent{
+                        width:100%;
+                        height:85%;
+                        display:flex;
+                        align-items:center;
+                        justify-content:center;
+                    }
+                    .networkContentBox{
+                        width:80%;
+                        height:90%;
+                        margin:0 auto;
+                        display:flex;
+                        flex-flow:column;
+                        align-items:center;
+                        justify-content:space-evenly;
+                        background-color:$contents-color;
+                        border-radius:$default-radius;
+                        p{
+                            width:80%;
+                            display:flex;
+                            justify-content:space-between;
+                            align-items:center;
+                            input{
+                                width:$input-width;
+                                height:$input-height;
+                            }
+                        }
+                    }
+                    
+                }
+            }
+        }
+        .bottomAdminSection{
+            width:90%;
+            height:43vh;
+            display:flex;
+            .tracfficSection{
+                width:26%;
+                height:95%;
+                display:flex;
+                justify-content:center;
+                margin:0 1%;
+                border-radius:$default-radius;
+                background-color:$box-color;
+                box-shadow:$default-shadow;
+                .tracfficBox{
+                    width:100%;
+                    height:100%;
+                    display:flex;
+                    flex-flow:column;
+                    align-items:center;
+                    h2{
+                        width:100%;
+                        height:15%;
+                        font-size:20px;
+                        display:flex;
+                        justify-content:center;
+                        align-items:center;
+                        background-color:$title-back;
+                        font-weight:normal;
+                        border-radius: $default-radius $default-radius 0 0;
+                        p{
+                            width:auto;
+                        }
+                    }
+                    .trafficContent{
+                        width:100%;
+                        height:85%;
+                        display:flex;
+                        align-items:center;
+                        justify-content:center;
+                    }
+                    .trafficContentBox{
+                        width:80%;
+                        height:90%;
+                        margin:0 auto;
+                        display:flex;
+                        flex-flow:column;
+                        align-items:center;
+                        justify-content:space-evenly;
+                        background-color:$contents-color;
+                        border-radius:$default-radius;
+                        p{
+                            width:80%;
+                            display:flex;
+                            justify-content:space-between;
+                            align-items:center;
+                            input{
+                                width:40%;
+                                height:$input-height;
+                            }
+                        }
+                    }
+                }
+            }
+            .diskSection{
+                width:37%;
+                height:95%;
+                display:flex;
+                justify-content:center;
+                margin:0 1%;
+                border-radius:$default-radius;
+                background-color:$box-color;
+                box-shadow:$default-shadow;
+                .diskBox{
+                    width:100%;
+                    height:100%;
+                    display:flex;
+                    flex-flow:column;
+                    align-items:center;
+                    h2{
+                        width:100%;
+                        height:15%;
+                        font-size:20px;
+                        display:flex;
+                        justify-content:center;
+                        align-items:center;
+                        background-color:$title-back;
+                        font-weight:normal;
+                        margin-bottom:$default-margin;
+                        border-radius: $default-radius $default-radius 0 0;
+                        p{
+                            width:auto;
+                        }
+                    }
+                    .diskInputBox{
+                        width:100%;
+                        height:80%;
+                        display:flex;
+                        flex-flow:column;
+                        align-items:center;
+
+                        justify-content:space-evenly;
+                        margin-bottom:$default-margin; 
+                        div{
+                            width:100%;
+                            height:33%;
+                            display:flex;
+                            flex-flow:wrap;
+                            justify-content:space-around;
+                            align-items:center;
+                            font-size:$default-font-size;
+                            div{
+                                width:45%;
+                                height:90%;
+                                display:flex;
+                                flex-flow:column; 
+                                align-items:center;
+                                background-color:$contents-color;
+                                a{
+                                    width:80%;
+                                    display:flex;
+                                    align-items:center;
+                                    justify-content:space-evenly;
+                                    div{
+                                        width:10%;
+                                    }
+                                    input{
+                                        width:25%;
+                                        height:$input-height;
+                                    }
+                                    input[type=checkbox]{
+                                        width:9%;
+                                    }
+                                }
+                                p{
+                                    width:80%;
+                                    display:flex;
+                                    justify-content:space-between;
+                                    align-items:center;
+                                    input{
+                                        width:25%;
+                                        height:$input-height;
+                                    }
+                                }
+                            }       
+                        }
+                    }
+                }
+            }
+            .ramEvent{
+                width:30%;
+                height:95%;
+                margin:0 1%;
+                display:flex;
+                flex-flow:column;
+                justify-content:space-between;
+                .ramSection{
+                    width:100%;
+                    height:47.5%;
+                    display:flex;
+                    border-radius:$default-radius;
+                    background-color:$box-color;
+                    box-shadow:$default-shadow;
+                    .ramBox{
+                        width:100%;
+                        height:100%;
+                        display:flex;
+                        flex-flow:column;
+                        align-items:center;
+                        .ramContentBox{
+                            width:100%;
+                            height:70%;
+                            display:flex;
+                            align-items:center;
+                            justify-content:center;
+                            border-radius:$default-radius;
+                        }
+                        h2{
+                            width:100%;
+                            height:30%;
+                            font-size:20px;
+                            display:flex;
+                            justify-content:center;
+                            align-items:center;
+                            background-color:$title-back;
+                            font-weight:normal;
+                            border-radius: $default-radius $default-radius 0 0;
+                            p{
+                                width:auto;
+                            }
+                        }
+                        .ramInputBox{
+                            width:90%;
+                            height:80%;
+                            display:flex;
+                            flex-flow:column;
+                            align-items:center;
+                            justify-content:space-evenly;
+                            background-color:$contents-color;
+                            p{
+                                width:80%;
+                                display:flex;
+                                justify-content:space-between;
+                                align-items:center;
+                                input{
+                                    width:$input-width;
+                                    height:$input-height;
+                                }
+                            }
+                        }
+                    }
+                }
+                .eventSection{
+                    width:100%;
+                    height:47.5%;
+                    display:flex;
+                    justify-content:center;
+                    border-radius:$default-radius;
+                    background-color:$box-color;
+                    box-shadow:$default-shadow;
+                    .eventBox{
+                        width:100%;
+                        height:100%;
+                        display:flex;
+                        justify-content:center;
+                        flex-flow:wrap;
+                        h2{
+                            width:100%;
+                            height:30%;
+                            font-size:20px;
+                            display:flex;
+                            justify-content:center;
+                            align-items:center;
+                            background-color:$title-back;
+                            font-weight:normal;
+                            border-radius: $default-radius $default-radius 0 0;
+                            p{
+                                width:auto;
+                            }
+                        }
+                        div{
+                            width:100%;
+                            height:30%;
+                            display:flex;
+                            justify-content:space-around;
+                            align-items:center;
+                            button{
+                                width:40%;
+                                height:70%;
+                                background-color: $btn-color;
+                                box-shadow: 3px 3px 2px -2px;
+                                border-radius: 5px;
+                                border:none;
+                                display:flex;
+                                justify-content:space-around;
+                                align-items:center;
+                                cursor:pointer;
+                                img{
+                                    width:20px;
+                                    height:20px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    *{font-size:1.5vw;}
+    body{
+        .container {
+            width:100%;
+            margin: 0;
+            flex-direction:row;
+            .sideMenu{
+                display: none;
+            }
+            i{
+                font-size:3vw;
+                display:flex;
+            }
+            h1 {
+                margin: 0; 
+                width: 100%;
+                height: 5vh;
+                margin-top: 0.83vw;
+                background-color:#3D414F;
+                position: relative;
+                color: $color-white; 
+                font-size: 1.67vw;
+                padding: 1.67vw; 
+                ul{
+                    width:40%;
+                    display:flex;
+                    justify-content:space-around;
+                    margin-right:1%;
+                    li{
+                        width:15%;
+                        display:flex;
+                        justify-content:center;
+                        align-items:center;
+                        color:white;
+                        i{
+                            color:white;
+                        }
+                    }
+                    .saveOut{
+                        width:35%;
+                        height:65%;
+                        box-shadow: none;
+                        border-radius: 5px;
+                        border:none;
+                        display:flex;
+                        justify-content:space-evenly;
+                        align-items:center;
+                        cursor:pointer;
+                        background-color:$btn-color;
+                        margin-right:1%;
+                        p{
+                            font-size:2vw;
+                        }
+                        img{
+                            width:20px;
+                            height:20px;
+                        }
+                    }
+                }
+            }
+            h2{
+                p{
+                    font-size:3vw;
+                }
+            }
+            .topAdminSection {
+                width: 100vw;
+                height:35vh;
+                margin-top: 0.83vw; 
+                display: flex;
+                flex-flow:row;
+                .cpuSection{
+                    width: 60vw;
+                    height: 100%;
+                    margin:0.83vw auto;
+                }
+                .networkSection{
+                    width:37vw;
+                    height:100%;
+                    margin:0.83vw auto;
+                }
+            }
+            .bottomAdminSection {
+                width: 100vw;
+                height:70vh;
+                margin-top: 0.83vw;
+                display: flex; 
+                flex-flow:row wrap;
+                align-items:center;
+                .tracfficSection{
+                    width: 40vw;
+                    height: 35vh;
+                    margin:0.83vw auto;
+                }
+                .diskSection{
+                    width:57vw;
+                    height:35vh;
+                    margin:0.83vw auto;
+                }
+                .ramEvent{
+                    width:100vw;
+                    height:30vh;
+                    display:flex;
+                    flex-flow:row;
+                    justify-content:space-between;
+                    align-items:center;
+                    .ramSection{
+                        width: 48.5vw;
+                        height: 100%;
+                    }
+                    .eventSection{
+                        width: 48.5vw;
+                        height: 100%;
+                    }
+                }
+            } 
+        }
+    }
+}
+
+@media screen and (max-width:480px) {
+    *{font-size:2.5vw;}
+    body{
+        .container {
+            width:100%;
+            margin: 0;
+            flex-direction:row;
+            .sideMenu{
+                display: none;
+            }
+            .saveOut{
+                font-size:1.5vw;
+            }
+            i{
+                font-size:3vw;
+                display:flex;
+            }
+            h1 {
+                margin: 0; 
+                width: 100%;
+                height: 5vh;
+                margin-top: 0.83vw;
+                background-color:#3D414F;
+                position: relative;
+                color: $color-white; 
+                font-size: 1.67vw;
+                padding: 1.67vw; 
+            }
+            h2{
+                p{
+                    font-size:3vw;
+                }
+            }
+            .topAdminSection {
+                width: 100vw;
+                height:66.6vh;
+                margin-top: 0.83vw; 
+                display: flex;
+                flex-flow:column;
+                .cpuSection,.networkSection{
+                    width: 90vw;
+                    height: 50%;
+                    margin:0.83vw auto;
+                }
+            }
+            .bottomAdminSection {
+                width: 100vw;
+                height:100vh;
+                display: flex; 
+                flex-flow:column;
+                .tracfficSection,.diskSection,.ramEvent{
+                    width: 90vw;
+                    height: 50vh;
+                    margin:0.83vw auto;
+                }
+                .ramEvent{
+                    height:30vh;
+                    display:flex;
+                    flex-flow:row;
+                    justify-content:space-between;
+                    align-items:center;
+                    .ramSection{
+                        width: 44vw;
+                        height: 100%;
+                    }
+                    .eventSection{
+                        width: 44vw;
+                        height: 100%;
+                    }
+                }
+            } 
+        }
+    }
+}

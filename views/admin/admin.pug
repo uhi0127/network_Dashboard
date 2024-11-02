@@ -1,0 +1,255 @@
+doctype html
+html(lang="ko")
+    head
+        meta(charset="UTF-8")
+        meta(name='viewport', content='width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes')
+        meta(http-equiv="X-UA-Compatible",content="IE=edge")
+        title dashboard
+        link(rel='stylesheet', href='/admin/style/style.css')
+        link(type="image/png" sizes="32x32" rel="icon" href="/admin/img/dash2.png")
+        script(defer src="./js/admin.js")
+        script(src="https://kit.fontawesome.com/7d69e807df.js" crossorigin="anonymous")
+    body
+        div.container#container
+            include ../slide/slide.pug
+            div.warningWindow#warningWindow
+                div.warningContent#warningContent
+                    h4.warningTitle#warningTitle
+                        i.fa-solid.fa-triangle-exclamation
+                        p 경고
+                        i.fa-solid.fa-triangle-exclamation
+                    p.warningMessage#warningMessage 값을 잘못 입력하셨습니다 양의 정수만 입력해주세요
+                    button.warningBtn#warningBtn 확인
+            h1.adminTitle#adminTitle 
+                p Admin Dashboard
+                ul
+                    li
+                        a(href="/")
+                            i.fa-solid.fa-house
+                    li
+                        a(href="/admin")
+                            i.fa-solid.fa-gear
+                    li
+                        a(href="#")
+                            i.fa-solid.fa-rotate
+                    button.stopStartBtn#stopStartBtn(disabled="disabled")
+                        i.fa-solid.fa-pause#stopIcon
+                        i.fa-solid.fa-play#startIcon
+                    button.saveOut#saveOut
+                        i.fa-solid.fa-share-from-square
+                        p Save
+            section.topAdminSection#topAdminSection
+                div.cpuSection#cpuSection
+                    div.cpuBox#cpuBox
+                        h2.cpuTitle#cpuTitle
+                            i.fa-solid.fa-microchip
+                            p CPU
+                        div.cpuContentBox#cpuContentBox
+                            div.cpuLeftValue.cpuLeftValue
+                                a CPU Core 사용 평균 percentage 입력:
+                                    input.cpuLeftTextInput#cpuLeftTextInput(value="0")
+                            div.cpuRightValue.cpuRightValue
+                                h3.cpuRightTitle#cpuRightTitle
+                                    p Core별 사용 percentage 입력
+                                div.cpuMinMax
+                                    a
+                                        input(type="checkbox" disabled="disabled")
+                                        span Core 1:
+                                        p (min)
+                                        p (max)
+                                    a
+                                        input(type="checkbox" disabled="disabled")
+                                        span Core 1:
+                                        p (min)
+                                        p (max)
+                                div.coreValueBox#coreValueBox
+                                    a
+                                        input(type="checkbox" checked).coreValueCheck1#coreValueCheck1
+                                        p Core 1:
+                                        input.coreValueMin1#coreValueMin1(value="0")
+                                        input.coreValueMax1#coreValueMax1(value="0")
+                                    a
+                                        input(type="checkbox" checked).coreValueCheck2#coreValueCheck2
+                                        p Core 2:
+                                        input.coreValueMin2#coreValueMin2(value="0")
+                                        input.coreValueMax2#coreValueMax2(value="0")
+                                    a
+                                        input(type="checkbox" checked).coreValueCheck3#coreValueCheck3
+                                        p Core 3:
+                                        input.coreValueMin3#coreValueMin3(value="0")
+                                        input.coreValueMax3#coreValueMax3(value="0")
+                                    a
+                                        input(type="checkbox" checked).coreValueCheck4#coreValueCheck4
+                                        p Core 4:
+                                        input.coreValueMin4#coreValueMin4(value="0")
+                                        input.coreValueMax4#coreValueMax4(value="0")
+                                    a
+                                        input(type="checkbox" checked).coreValueCheck5#coreValueCheck5
+                                        p Core 5:
+                                        input.coreValueMin5#coreValueMin5(value="0")
+                                        input.coreValueMax5#coreValueMax5(value="0")
+                                    a
+                                        input(type="checkbox" checked).coreValueCheck6#coreValueCheck6
+                                        p Core 6:
+                                        input.coreValueMin6#coreValueMin6(value="0")
+                                        input.coreValueMax6#coreValueMax6(value="0")
+                                    a
+                                        input(type="checkbox" checked).coreValueCheck7#coreValueCheck7
+                                        p Core 7:
+                                        input.coreValueMin7#coreValueMin7(value="0")
+                                        input.coreValueMax7#coreValueMax7(value="0")
+                                    a
+                                        input(type="checkbox" checked).coreValueCheck8#coreValueCheck8
+                                        p Core 8:
+                                        input.coreValueMin8#coreValueMin8(value="0")
+                                        input.coreValueMax8#coreValueMax8(value="0")
+                div.networkSection#networkSection
+                    div.networkBox#networkBox
+                        h2.networkTitle#networkTitle
+                            i.fa-solid.fa-network-wired
+                            p Network Speed
+                        div.networkContent#networkContent
+                            div.networkContentBox#networkContentBox
+                                p.networkValuePart1#networkValuePart1
+                                    a Speed Max:
+                                    input.speedMaxValue#speedMaxValue(value="0")
+                                p.networkValuePart#networkValuePart
+                                    a Speed Min:
+                                    input.speedMinValue#speedMinValue(value="0")
+                                p.networkValuePart2#networkValuePart2
+                                    a Speed Download Max:
+                                    input.speedDownloadValueMax#speedDownloadValueMax(value="0")
+                                p.networkValuePart3#networkValuePart3
+                                    a Speed Download Min:
+                                    input.speedDownloadValueMin#speedDownloadValueMin(value="0")
+                                p.networkValuePart4#networkValueValuePart4
+                                    a Speed Upload Max:
+                                    input.speedUploadValueMax#speedUploadValueMax(value="0")
+                                p.networkValuePart5#networkValueValuePart5
+                                    a Speed Upload Min:
+                                    input.speedUploadValueMin#speedUploadValueMin(value="0")
+            section.bottomAdminSection#bottomAdminSection
+                div.tracfficSection#tracfficSection
+                    div.tracfficBox#tracfficBox 
+                        h2.tracfficTitle#tracfficTitle 
+                            i.fa-brands.fa-watchman-monitoring
+                            p Traffic
+                        div.trafficContent#trafficContent
+                            div.trafficContentBox#trafficContentBox
+                                //- p.tracfficValuePart1#tracfficValuePart1
+                                //-     a Sent Average:
+                                //-     input.sentAverageValue#sentAverageValue
+                                p.tracfficValuePart2#tracfficValuePart2
+                                    a Sent Max:
+                                    input.sentMaxValue#sentMaxValue(value="0")
+                                p.tracfficValuePart3#tracfficValuePart3
+                                    a Sent Min:
+                                    input.sentMinValue#sentMinValue(value="0")
+                                //- p.tracfficValuePart4#tracfficValuePart4
+                                //-     a Received Average:
+                                //-     input.receivedAverageValue#receivedAverageValue
+                                p.tracfficValuePart5#tracfficValuePart5
+                                    a Received Max:
+                                    input.receivedMaxValue#receivedMaxValue(value="0")
+                                p.tracfficValuePart6#tracfficValuePart6
+                                    a Received Min:
+                                    input.receivedMinValue#receivedMinValue(value="0")
+                div.diskSection#diskSection
+                    div.diskBox#diskBox
+                        h2.diskTitle#diskTitle 
+                            i.fa-solid.fa-hard-drive 
+                            p Disk
+                        div.diskInputBox#discInputBox
+                            div.diskValuePart1#diskValuePart1
+                                div
+                                    p Local Disk 용량:
+                                        input.diskValue1#diskValue1(value="0")
+                                    p Local Disk 사용량:
+                                        input.diskValue2#diskValue2(value="0")
+                                div
+                                    a
+                                        input(type="checkbox" checked).subDiskCheck#subDiskCheck
+                                        p Sub Local Disk:
+                                        input.subDiskValue1#subDiskValue1(value="0")
+                                    a
+                                        div
+                                        p Sub Local Disk:
+                                        input.subDiskValue2#subDiskValue2(value="0")
+                                    //- p.subDisk#subDisk Sub Local Disk:
+                                    //-     input.subDiskValue2#subDiskValue2(disabled = "disabled")
+                            div.diskValuePart2#diskValuePart2
+                                div
+                                    p Local USB 용량:
+                                        input.usbValue1#usbValue1(value="0")
+                                    p Local USB 사용량:
+                                        input.usbValue2#usbValue2(value="0")
+                                div
+                                    a
+                                        input(type="checkbox" checked).subUsbCheck#subUsbCheck
+                                        p Sub Local USB:
+                                        input.subUsbValue1#subUsbValue1(value="0")
+                                    a
+                                        div
+                                        p Sub Local USB:
+                                        input.subUsbValue2#subUsbValue2(value="0")
+                                    //- p.subUsb#subUsb Sub Local USB:
+                                    //-     input.subUsbValue2#subUsbValue2(disabled = "disabled")
+                            div.diskValuePart3#diskValuePart3
+                                div
+                                    p Web Disk 용량:
+                                        input.webValue1#webValue1(value="0")
+                                    p Web Disk 사용량:
+                                        input.webValue2#webValue2(value="0")
+                                div
+                                    a
+                                        input(type="checkbox" checked).subWebCheck#subWebCheck
+                                        p Sub Web Disk:
+                                        input.subWebValue1#subWebValue1(value="0")
+                                    a
+                                        div
+                                        p Sub Web Disk:
+                                        input.subWebValue2#subWebValue2(value="0")
+                                    //- p.subWeb#subWeb Sub Web Disk:
+                                    //-     input.subWebValue2#subWebValue2(disabled = "disabled")
+                div.ramEvent#ramEvent
+                    div.ramSection#ramSection
+                        div.ramBox#ramBox
+                            h2.ramTitle#ramTitle 
+                                i.fa-solid.fa-memory 
+                                p Ram
+                            div.ramContentBox#ramContentBox
+                                div.ramInputBox#ramInputBox
+                                    p.ramValuePart1#ramValuePart1
+                                        a Ram Total:
+                                        input.ramTotalValue#ramTotalValue(value="0")
+                                    p.ramValuePart2#ramValuePart2
+                                        a Ram Using(min):
+                                        input.ramUsingValueMin#ramUsingValueMin(value="0")
+                                    p.ramValuePart3#ramValuePart3
+                                        a Ram Using(max):
+                                        input.ramUsingValueMax#ramUsingValueMax(value="0")
+                    div.eventSection#eventSection
+                        div.eventBox#eventBox
+                            h2.eventTitle#eventTitle 
+                                i.fa-solid.fa-record-vinyl
+                                p Event
+                            div
+                                button.safeBtn#safeBtn
+                                    i.fa-solid.fa-user-shield
+                                    p Safe Wall
+                                button.updateBtn#updateBtn
+                                    i.fa-brands.fa-ubuntu
+                                    p Os Update
+                            div
+                                button.networkBtn#networkBtn
+                                    i.fa-solid.fa-wifi
+                                    p Network
+                                button.attrackBtn#attrackBtn
+                                    i.fa-solid.fa-viruses
+                                    p Attack
+                                 
+
+
+
+
+                        

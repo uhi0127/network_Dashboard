@@ -1,0 +1,140 @@
+createCanvas(w, h, [renderer], [canvas]) // createCanvas(w, h, [canvas])
+w : number
+   캔버스의 너비값
+h : number
+   캔버스의 높이값
+renderer 상수: (선택 사항) P2D 또는 WEBGL
+canvas HTMLCanvasElement: existing html canvas element (Optional)
+===================================================================================
+
+createGraphics(w, h, [renderer], [canvas]) // createGraphics(w, h, [canvas]);
+w : number
+   화면 밖 그래픽 버퍼의 너비값
+h : number
+   화면 밖 그래픽 버퍼의 높이값
+renderer 상수：P2D 또는 WEBGL, 기본값은 P2D
+canvas HTMLCanvasElement: existing html canvas element (Optional);
+===================================================================================
+
+
+id(id)
+id : string
+   요소의 ID
+===================================================================================
+
+
+class(class)
+class : string
+   추가할 클래스
+===================================================================================
+
+
+parent(parent)
+parent : string or p5.Element or 객체
+   지정된 부모 요소의 ID, DOM node, 또는 p5.Element
+===================================================================================
+
+
+circle(x, y, d)
+x : number
+   중심 x좌표
+y : number
+   중심 y좌표
+d : number
+   원의 지름
+===================================================================================
+
+arc(x, y, w, h, start, stop, [mode], [detail])
+x :  number
+   호를 포함하는 원의 x좌표
+y : number
+   호를 포함하는 원의 y좌표값
+w : number
+   호를 포함하는 원의 너비값
+h : number
+   호를 포함하는 원의 높이값
+start : number
+   라디안 단위, 호의 시작점 각도값
+stop : number
+   라디안 단위, 호의 끝점 각도값
+mode 상수 : (선택 사항) 호를 그리는 방식들로, CHORD, PIE, OPEN 중 선택 가능
+detail : (선택 사항) 호의 윤곽선을 구성하는 꼭짓점 개수를 지정. 기본값은 25. (WebGL 모드용)
+===================================================================================
+
+fill(v1, v2, v3, [alpha])
+fill(value)
+fill(gray, [alpha])
+fill(values)
+fill(color)
+
+v1 : number
+   현재 지정된 색상 모드의 색상 범위에 따른 빨강값 또는 색조값
+v2 : number
+   현재 지정된 색상 모드의 색상 범위에 따른 초록값 또는 채도값
+v3 : number
+   현재 지정된 색상 모드의 색상 범위에 따른 파랑값 또는 밝기값
+alpha : number(선택사항)
+value : string
+   색상 문자열
+gray:  number
+   회색값
+values 숫자 배열[]: 색상의 빨강값, 초록값, 파랑값, 그리고 알파값을 포함한 배열
+color p5.Color: 면채우기 색상
+===================================================================================
+
+noFill()
+   그냥 선언
+   아무것도 채우지 않기
+===================================================================================
+
+textSize(size)
+size : number
+   size of the letters in units of pixels
+===================================================================================
+
+text(str, x, y, [maxWidth], [maxHeight])
+str : string or object  or array or number or bollean 표시할 영숫자 기호
+x: number
+   텍스트의 x좌표값
+y : number
+   텍스트의 y좌표값
+maxWidth : number
+   maximum width of the text box. See rectMode() for other options. (Optional)
+maxHeight : number
+   maximum height of the text box. See rectMode() for other options. (Optional)
+===================================================================================
+
+
+textAlign(horizAlign, [vertAlign])
+horizAlign 상수: 가로 정렬, LEFT, CENTER, 또는 RIGHT 중 하나
+vertAlign 상수: 세로 정렬, TOP, BOTTOM, CENTER, 또는 BASELINE 중 하나
+===================================================================================
+
+
+stroke(v1, v2, v3, [alpha])
+stroke(value)
+stroke(gray, [alpha])
+stroke(values)
+stroke(color)
+
+v1 : number
+   현재 지정된 색상 모드의 색상 범위에 따른 빨강값 또는 색조값
+v2 : number
+   현재 지정된 색상 모드의 색상 범위에 따른 초록값 또는 채도값
+v3 숫자:현재 지정된 색상 모드의 색상 범위에 따른 파랑값 또는 밝기값
+alpha : number (선택사항)
+value  : string
+   색상 문자열
+gray : number
+   회색값
+values 숫자 배열[]: 색상의 빨강값, 초록값, 파랑값, 그리고 알파값을 포함한 배열
+color p5.Color: 선의 색상
+===================================================================================
+
+
+noStroke()
+   그냥 선언
+   선이나 윤곽선을 그리지 않도록 설정
+===================================================================================
+
+
